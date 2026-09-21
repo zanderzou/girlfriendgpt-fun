@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://girlfriendgpt.fun/sitemap-index.xml

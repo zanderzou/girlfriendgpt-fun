@@ -1,0 +1,5 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+interface Props{title:string;description:string;kicker:string}const{title,description,kicker}=Astro.props;
+---
+<BaseLayout title={`${title} | GirlfriendGPT Guide`} description={description}><section class="info-hero"><div class="ambient-orb"></div><span>{kicker}</span><h1>{title}</h1><p>{description}</p><small>Last reviewed: September 21, 2026</small></section><article class="info-content"><slot/></article></BaseLayout>
