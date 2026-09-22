@@ -7,7 +7,7 @@ import "../styles.css";
 interface Props { title:string; description:string; type?:"website"|"article"; keywords?:string[]; noindex?:boolean; publishedTime?:string; modifiedTime?:string; jsonLd?:Record<string,unknown>|Record<string,unknown>[]; }
 const { title,description,type="website",keywords=[],noindex=false,publishedTime,modifiedTime,jsonLd }=Astro.props;
 const canonical=new URL(Astro.url.pathname,site.url).toString();
-const image=`${site.url}/assets/girlfriendgpt-adult-swimwear-editorial.jpg`;
+const image = `${site.url}/assets/girlfriendgpt-user-selfie.jpg`;
 const posts=(await getCollection("blog")).sort((a,b)=>b.data.publishDate.valueOf()-a.data.publishDate.valueOf());
 const robots=noindex?"noindex,follow":"index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
 ---
