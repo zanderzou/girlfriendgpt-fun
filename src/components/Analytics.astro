@@ -1,0 +1,31 @@
+---
+import { site } from "../data/site";
+import { measurementId } from "../data/analytics";
+const domain = new URL(site.url).hostname;
+---
+{measurementId && <>
+  <div id="site-analytics" data-measurement-id={measurementId} data-domain={domain}>
+    <div class="analytics-footer"><button type="button" id="analytics-settings">Analytics preferences</button></div>
+    <aside id="analytics-notice" role="region" aria-label="Analytics preferences" hidden>
+      <div><strong>Optional analytics</strong><p>May we use Google Analytics to understand visits and improve this guide? No advertising tracking. <a href="/privacy/">Privacy details</a>.</p><p id="analytics-status" aria-live="polite"></p></div>
+      <div class="analytics-actions"><button type="button" id="analytics-decline">No thanks</button><button type="button" id="analytics-accept">Allow analytics</button></div>
+    </aside>
+  </div>
+  <script is:inline src="/analytics-consent.js"></script>
+</>}
+<style>
+  .analytics-footer{padding:12px 24px 20px;text-align:center}
+  #analytics-settings{font:inherit;font-size:12px;line-height:1.5;color:inherit;background:transparent;border:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer;opacity:.8}
+  #analytics-notice[hidden]{display:none!important}
+  #analytics-notice{box-sizing:border-box;position:fixed;inset:auto 20px 20px;z-index:1000;margin:0 auto;max-width:920px;display:flex;align-items:center;gap:24px;padding:20px 24px;border:1px solid #5b5669;border-radius:16px;background:#19171f;color:#f6f3fc;box-shadow:0 8px 40px #0005;font:14px/1.55 system-ui,sans-serif;text-align:left}
+  #analytics-notice strong{font-size:15px}
+  #analytics-notice p{font:inherit;color:#e0dce9;margin:5px 0 0;max-width:64ch}
+  #analytics-notice a{color:#e7d8ff;text-decoration:underline}
+  #analytics-status:empty{display:none}
+  .analytics-actions{display:flex;flex-shrink:0;gap:8px}
+  .analytics-actions button{appearance:none;cursor:pointer;border:1px solid #736a82;border-radius:9px;padding:10px 14px;white-space:nowrap;background:transparent;color:#fff;font:600 13px/1.4 system-ui,sans-serif}
+  #analytics-accept{background:#eadfff;color:#251a33;border-color:#eadfff}
+  .analytics-actions button:disabled{opacity:.5;cursor:not-allowed}
+  #site-analytics button:focus-visible,#site-analytics a:focus-visible{outline:3px solid #be9bff;outline-offset:4px}
+  @media(max-width:640px){#analytics-notice{inset:auto 12px 12px;padding:16px;display:block}.analytics-actions{margin-top:12px;display:grid;grid-template-columns:1fr 1fr}.analytics-actions button{padding:10px 8px}}
+</style>
