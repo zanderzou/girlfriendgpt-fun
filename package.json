@@ -3,13 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22.12.0" },
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "node scripts/run-astro.mjs dev",
     "build": "node scripts/run-astro.mjs build && node scripts/prepare-sites-build.mjs",
     "preview": "node scripts/run-astro.mjs preview",
     "test:seo": "node scripts/audit-static.mjs",
-    "test:sites": "node --test tests/sites-worker.test.mjs"
+    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "generate:llms": "node scripts/generate-llms.mjs",
+    "test:llms": "node scripts/generate-llms.mjs --check",
+    "prebuild": "npm run generate:llms"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
