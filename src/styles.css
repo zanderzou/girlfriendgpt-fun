@@ -97,3 +97,10 @@ body:before{background:radial-gradient(circle at 78% 18%,rgba(117,72,244,.16),tr
 /* Preserve the full portrait in the hero instead of using a wide crop. */
 .hero>.hero-image{object-fit:contain!important;object-position:right center!important}
 @media(max-width:640px){.hero>.hero-image{object-fit:contain!important;object-position:center top!important}}
+/* Compact reading rhythm across desktop and narrow screens. */
+.hero h1{font-size:clamp(3.1rem,5.65vw,5.7rem)!important;line-height:1.04!important;letter-spacing:-.045em!important;overflow-wrap:break-word}
+.section{padding-top:clamp(3.5rem,5.5vw,5rem)!important;padding-bottom:clamp(3.5rem,5.5vw,5rem)!important}
+:is(.section-head,.feature-intro,.story-copy,.lab-copy,.privacy-copy,.faq,.related,.intent-grid,.answer-grid,.final-cta) h2{font-size:clamp(2.15rem,4.2vw,3.8rem)!important;line-height:1.1!important;letter-spacing:-.035em!important;overflow-wrap:break-word}
+:is(.page-hero,.info-hero,.article-header,.blog-hero) h1{font-size:clamp(2.8rem,5.8vw,5.5rem)!important;line-height:1.07!important;overflow-wrap:break-word}
+.section-head{margin-bottom:32px!important;gap:28px!important}
+@media(max-width:760px){.hero h1{font-size:clamp(2.35rem,9vw,3.55rem)!important}.section{padding-top:3.4rem!important;padding-bottom:3.4rem!important}:is(.section-head,.feature-intro,.story-copy,.lab-copy,.privacy-copy,.faq,.related,.intent-grid,.answer-grid,.final-cta) h2{font-size:clamp(2rem,7.8vw,3rem)!important}:is(.page-hero,.info-hero,.article-header,.blog-hero) h1{font-size:clamp(2.35rem,8.5vw,3.5rem)!important}}
