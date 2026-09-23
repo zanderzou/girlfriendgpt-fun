@@ -1,5 +1,5 @@
 export const site = {
-  name: "GirlfriendGPT Guide",
+  name: "GirlfriendGPT",
   domain: "girlfriendgpt.fun",
   url: "https://girlfriendgpt.fun",
   description: "An independent GirlfriendGPT guide to AI girlfriend chat, character creation, roleplay, images, voice, privacy, pricing, and leading alternatives.",
