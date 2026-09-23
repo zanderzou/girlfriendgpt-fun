@@ -104,3 +104,11 @@ body:before{background:radial-gradient(circle at 78% 18%,rgba(117,72,244,.16),tr
 :is(.page-hero,.info-hero,.article-header,.blog-hero) h1{font-size:clamp(2.8rem,5.8vw,5.5rem)!important;line-height:1.07!important;overflow-wrap:break-word}
 .section-head{margin-bottom:32px!important;gap:28px!important}
 @media(max-width:760px){.hero h1{font-size:clamp(2.35rem,9vw,3.55rem)!important}.section{padding-top:3.4rem!important;padding-bottom:3.4rem!important}:is(.section-head,.feature-intro,.story-copy,.lab-copy,.privacy-copy,.faq,.related,.intent-grid,.answer-grid,.final-cta) h2{font-size:clamp(2rem,7.8vw,3rem)!important}:is(.page-hero,.info-hero,.article-header,.blog-hero) h1{font-size:clamp(2.35rem,8.5vw,3.5rem)!important}}
+
+/* Full-width editorial headings and compact section rhythm, 2026-09-23. */
+.section{padding-top:clamp(26px,2.8vw,38px)!important;padding-bottom:clamp(26px,2.8vw,38px)!important}
+.section-head{display:block;margin-bottom:22px!important}
+.section-head h2{font-size:clamp(1.9rem,2.35vw,2.45rem)!important;line-height:1.12;letter-spacing:-.03em;margin:8px 0 0;max-width:none;overflow-wrap:normal}
+.section-head>p{max-width:none;width:100%;margin:8px 0 0;line-height:1.5}
+@media(max-width:600px){.section{padding-top:24px!important;padding-bottom:24px!important}.section-head{margin-bottom:18px!important}.section-head h2{font-size:clamp(1.7rem,7vw,2.15rem)!important;overflow-wrap:break-word}}
+.section-head h2 span{display:inline}
