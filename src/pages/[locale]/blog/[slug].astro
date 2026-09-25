@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { localeList, type LocaleSlug } from "../../../data/localized-girlfriendgpt";
+import { localizedUi } from "../../../data/localized-ui";
+import { comparisonCopy, comparisonKeys, competitorSources, girlfriendSources, type ComparisonKey } from "../../../data/localized-articles";
+import { site } from "../../../data/site";
+export function getStaticPaths() { return localeList.flatMap((entry) => comparisonKeys.map((key) => ({ params: { locale: entry.slug, slug: `girlfriendgpt-vs-${key}` }, props: { localeSlug: entry.slug, key } }))); }
+const locale = Astro.props.localeSlug as LocaleSlug;
+const key = Astro.props.key as ComparisonKey;
+const copy = comparisonCopy[locale]![key];
+const ui = localizedUi[locale];
+const lang = localeList.find((entry) => entry.slug === locale)!.code;
+const root = `/${locale}/`;
+const pageUrl = `${site.url}${root}blog/girlfriendgpt-vs-${key}/`;
+const sources = [...girlfriendSources, ...competitorSources[key]];
+const jsonLd = { "@context": "https://schema.org", "@graph": [
+  { "@type": "Article", headline: copy.title, description: copy.description, url: pageUrl, mainEntityOfPage: pageUrl, inLanguage: lang, datePublished: "2026-09-25", dateModified: "2026-09-25", author: { "@type": "Organization", name: site.author, url: site.url }, publisher: { "@type": "Organization", name: site.name, url: site.url }, citation: sources.map((source) => source.url) },
+  { "@type": "BreadcrumbList", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "GirlfriendGPT", item: `${site.url}${root}` },
+    { "@type": "ListItem", position: 2, name: ui.blog, item: `${site.url}${root}blog/` },
+    { "@type": "ListItem", position: 3, name: copy.title, item: pageUrl },
+  ] },
+] };
+---
+<BaseLayout title={copy.title} description={copy.description} type="article" publishedTime="2026-09-25" modifiedTime="2026-09-25" jsonLd={jsonLd}>
+  <article class="locale-article"><header><a class="locale-back" href={`${root}blog/`}>← {ui.back}</a><span class="section-label">GirlfriendGPT / {ui.compare}</span><h1>{copy.title}</h1><p class="locale-article-intro">{copy.intro}</p></header><div class="locale-article-body">{copy.sections.map(([heading, paragraphs]) => <section><h2>{heading}</h2>{paragraphs.map((paragraph) => <p>{paragraph}</p>)}</section>)}<section class="locale-verdict"><h2>{ui.decision}</h2><p>{copy.verdict}</p></section></div><section class="locale-article-sources"><h2>{ui.sources}</h2><ul>{sources.map((source) => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.name} ↗</a></li>)}</ul></section><a class="locale-back" href={`${root}blog/`}>← {ui.back}</a></article>
+</BaseLayout>

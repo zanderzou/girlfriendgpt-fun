@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Icon from "../../components/Icon.astro";
+import heroImage from "../../assets/girlfriendgpt-user-selfie.jpg";
+import secondaryImage from "../../assets/girlfriendgpt-user-character.jpg";
+import { homeCopy, localeList, type LocaleSlug } from "../../data/localized-girlfriendgpt";
+import { localizedUi } from "../../data/localized-ui";
+import { comparisonCopy, comparisonKeys, girlfriendSources } from "../../data/localized-articles";
+import { site } from "../../data/site";
+export function getStaticPaths() { return localeList.map((entry) => ({ params: { locale: entry.slug }, props: { localeSlug: entry.slug } })); }
+const locale = Astro.props.localeSlug as LocaleSlug;
+const copy = homeCopy[locale]!;
+const ui = localizedUi[locale];
+const lang = localeList.find((entry) => entry.slug === locale)!.code;
+const root = `/${locale}/`;
+const pageUrl = `${site.url}${root}`;
+const jsonLd = { "@context": "https://schema.org", "@graph": [
+  { "@type": "WebSite", "@id": `${site.url}/#website`, name: site.name, url: site.url, inLanguage: lang },
+  { "@type": "WebPage", "@id": `${pageUrl}#webpage`, name: "GirlfriendGPT", description: copy.description, url: pageUrl, inLanguage: lang, isPartOf: { "@id": `${site.url}/#website` } },
+  { "@type": "FAQPage", mainEntity: copy.faqs.map(([question, answer]) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) },
+] };
+---
+<BaseLayout title="GirlfriendGPT" description={copy.description} jsonLd={jsonLd}>
+  <section class="hero locale-hero" id="discover"><Image class="hero-image" src={heroImage} alt={ui.heroAlt} widths={[640,960,1280,1536]} sizes="100vw" loading="eager" fetchpriority="high" quality={86}/><div class="hero-glow"></div><div class="hero-copy"><div class="kicker">{copy.hero.eyebrow}</div><h1>GirlfriendGPT</h1><p class="locale-hero-subhead">{copy.hero.subhead}</p><p>{copy.hero.lead}</p><div class="hero-actions"><a class="button primary" href="#method">{ui.method} <Icon name="arrow" /></a><a class="button ghost" href={`${root}blog/`}>{ui.blog}</a></div></div></section>
+  <section class="section locale-identity"><div class="section-label">01 / GirlfriendGPT</div><h2>{copy.identity.heading}</h2>{copy.identity.paragraphs.map((paragraph) => <p>{paragraph}</p>)}</section>
+  <section class="section" id="method"><div class="section-head"><div class="section-label">02 / {ui.method}</div><h2>{copy.method.heading}</h2><p>{copy.method.intro}</p></div><div class="locale-steps">{copy.method.steps.map(([heading, body], index) => <article><b>{String(index+1).padStart(2,"0")}</b><div><h3>{heading}</h3><p>{body}</p></div></article>)}</div></section>
+  <section class="section" id="compare"><div class="section-head"><div class="section-label">03 / {ui.compare}</div><h2>{copy.comparisons.heading}</h2><p>{copy.comparisons.intro}</p></div><div class="locale-comparisons">{copy.comparisons.rows.map(([heading, body], index) => <a href={`${root}blog/girlfriendgpt-vs-${comparisonKeys[index]}/`}><b>{String(index+1).padStart(2,"0")}</b><div><h3>{heading}</h3><p>{body}</p></div><Icon name="arrow" /></a>)}</div></section>
+  <section class="section locale-notes"><div class="section-label">04 / GirlfriendGPT</div><h2>{copy.notes.heading}</h2><figure><Image src={secondaryImage} alt={ui.secondaryAlt} widths={[640,960,1280]} sizes="(max-width: 640px) 100vw, 640px" loading="lazy" quality={84}/></figure><div class="locale-note-grid">{copy.notes.entries.map(([heading, body]) => <article><h3>{heading}</h3><p>{body}</p></article>)}</div><p class="locale-sources-inline">{girlfriendSources.slice(0,3).map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer">{source.name} ↗</a>)}</p></section>
+  <section class="section locale-safety" id="safety"><div class="section-label">05 / {ui.privacy}</div><h2>{copy.safety.heading}</h2>{copy.safety.paragraphs.map((paragraph) => <p>{paragraph}</p>)}<a href="https://www.gptgirlfriend.online/legal/blocked-content" target="_blank" rel="noopener noreferrer">{ui.official} <Icon name="arrow" /></a></section>
+  <section class="section"><div class="section-head"><div class="section-label">06 / {ui.blog}</div><h2>{ui.blogHeading}</h2><p>{ui.blogIntro}</p></div><div class="locale-article-grid">{comparisonKeys.map((key, index) => <a href={`${root}blog/girlfriendgpt-vs-${key}/`}><span>{String(index+1).padStart(2,"0")}</span><h3>{comparisonCopy[locale]![key].title}</h3><p>{comparisonCopy[locale]![key].description}</p><strong>{ui.read} ↗</strong></a>)}</div></section>
+  <section class="section locale-faq"><div class="section-label">07 / GirlfriendGPT</div><h2>{ui.faq}</h2><div class="faq-list">{copy.faqs.map(([question, answer]) => <details><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></section>
+</BaseLayout>

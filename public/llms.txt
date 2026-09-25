@@ -27,6 +27,143 @@ This is an independent editorial publication, not the official provider. Article
 - [Privacy policy](https://girlfriendgpt.fun/privacy/)
 - [Terms](https://girlfriendgpt.fun/terms/)
 
+## Localized editions
+
+### 日本語 (ja)
+
+- [GirlfriendGPT](https://girlfriendgpt.fun/ja/): GirlfriendGPT のキャラクター探索と自作、会話、画像生成を分けて検討。無料枠、クレジット、チャット履歴の扱いを確認し、五つの代替サービスを比較します。
+- [GirlfriendGPT の五つの比較](https://girlfriendgpt.fun/ja/blog/): 人物の作り方、モデル、画像、探索、関係の継続をそれぞれ異なる基準で検討します。
+- [GirlfriendGPT と Candy AI の比較：人物を探すか、一人を作るか](https://girlfriendgpt.fun/ja/blog/girlfriendgpt-vs-candy-ai/): GirlfriendGPT と Candy AI の人物探索、伴侶づくり、チャット、画像・音声の費用、プライバシーを目的別に比較します。
+- [GirlfriendGPT と CrushOn AI の比較：人物設定とモデル選択](https://girlfriendgpt.fun/ja/blog/girlfriendgpt-vs-crushon-ai/): キャラクターの発見、モデル選択、保存メモリー、長い会話の費用と公開範囲で GirlfriendGPT と CrushOn AI を見比べます。
+- [GirlfriendGPT と OurDream AI の比較：会話の人物と視覚の人物](https://girlfriendgpt.fun/ja/blog/girlfriendgpt-vs-ourdream-ai/): GirlfriendGPT と OurDream AI を、人物の外見の再現性、会話、画像・動画の導線、クレジットと素材の権利で比較します。
+- [GirlfriendGPT と SpicyChat AI の比較：人物を見つける速さと会話の深さ](https://girlfriendgpt.fun/ja/blog/girlfriendgpt-vs-spicychat-ai/): GirlfriendGPT と SpicyChat AI のタグ、人物カード、挨拶、長い対話、モデレーション、費用を同じ架空場面で比べます。
+- [GirlfriendGPT と Lovescape の比較：自由な役柄か、関係の進展か](https://girlfriendgpt.fun/ja/blog/girlfriendgpt-vs-lovescape/): GirlfriendGPT と Lovescape を、人物の自由度、関係を進める物語、画像・動画、費用、プライバシーで比較します。
+- [このサイトについて | GirlfriendGPT](https://girlfriendgpt.fun/ja/about/): girlfriendgpt.fun の独立した編集目的と、キャラクター探索・制作・会話・画像を分ける評価方針。
+- [編集方針 | GirlfriendGPT](https://girlfriendgpt.fun/ja/editorial-policy/): GirlfriendGPT 比較の一次資料、読者向け試験、更新、成人向け安全基準と訂正方針。
+- [お問い合わせ | GirlfriendGPT](https://girlfriendgpt.fun/ja/contact/): girlfriendgpt.fun の記事・画像・アクセシビリティに関する訂正依頼と連絡先の注意。
+- [プライバシー | GirlfriendGPT](https://girlfriendgpt.fun/ja/privacy/): 独立した静的サイト girlfriendgpt.fun の技術的な記録、任意のアクセス解析、外部リンク。
+- [利用条件 | GirlfriendGPT](https://girlfriendgpt.fun/ja/terms/): girlfriendgpt.fun の独立した情報、外部サービスとオリジナル作品に関する利用条件。
+
+### 한국어 (ko)
+
+- [GirlfriendGPT](https://girlfriendgpt.fun/ko/): GirlfriendGPT에서 커뮤니티 캐릭터와 직접 만든 인물을 구분하고 채팅·이미지·크레딧·개인정보를 살펴봅니다. 목적이 다른 다섯 대안과 비교합니다.
+- [GirlfriendGPT 비교 다섯 가지](https://girlfriendgpt.fun/ko/blog/): 인물 제작, 모델, 이미지, 탐색, 관계 진행을 서로 다른 기준으로 살펴봅니다.
+- [GirlfriendGPT vs Candy AI: 인물 탐색과 맞춤 컴패니언](https://girlfriendgpt.fun/ko/blog/girlfriendgpt-vs-candy-ai/): 커뮤니티 캐릭터를 고르는 GirlfriendGPT와 안내에 따라 컴패니언을 만드는 Candy AI를 대화, 이미지, 비용, 개인정보 측면에서 비교합니다.
+- [GirlfriendGPT vs CrushOn AI: 캐릭터 제작과 모델 설정](https://girlfriendgpt.fun/ko/blog/girlfriendgpt-vs-crushon-ai/): GirlfriendGPT와 CrushOn AI를 캐릭터 설계, 모델 선택, 저장된 기억, 장기 채팅 비용과 공개 범위로 비교합니다.
+- [GirlfriendGPT vs OurDream AI: 대화 속 인물과 화면 속 인물](https://girlfriendgpt.fun/ko/blog/girlfriendgpt-vs-ourdream-ai/): 외형의 반복성, 대화와 이미지의 연결, 생성 재시도 비용 및 소재 권리를 중심으로 GirlfriendGPT와 OurDream AI를 비교합니다.
+- [GirlfriendGPT vs SpicyChat AI: 캐릭터 찾기와 이야기 이어 가기](https://girlfriendgpt.fun/ko/blog/girlfriendgpt-vs-spicychat-ai/): 태그와 카드로 인물을 찾는 과정부터 첫 인사, 장기 역할극, 유료 기능까지 GirlfriendGPT와 SpicyChat AI를 비교합니다.
+- [GirlfriendGPT vs Lovescape: 자유로운 캐릭터와 관계의 흐름](https://girlfriendgpt.fun/ko/blog/girlfriendgpt-vs-lovescape/): 인물 설정의 자유도, 관계 서사, 이미지·영상, 결제와 프라이버시로 GirlfriendGPT와 Lovescape를 비교합니다.
+- [사이트 소개 | GirlfriendGPT](https://girlfriendgpt.fun/ko/about/): girlfriendgpt.fun의 독립 편집 목적과 커뮤니티 캐릭터, 제작, 대화, 이미지의 평가 기준입니다.
+- [편집 원칙 | GirlfriendGPT](https://girlfriendgpt.fun/ko/editorial-policy/): GirlfriendGPT 비교의 공식 자료, 재현 가능한 점검, 성인 안전 기준과 오류 수정 절차입니다.
+- [문의 | GirlfriendGPT](https://girlfriendgpt.fun/ko/contact/): girlfriendgpt.fun의 사실 오류, 이미지 권리, 접근성 문제에 대한 정정 요청 안내입니다.
+- [개인정보 | GirlfriendGPT](https://girlfriendgpt.fun/ko/privacy/): 정적 독립 사이트 girlfriendgpt.fun의 기술적 접속 정보와 동의 기반 방문 분석에 관한 설명입니다.
+- [이용 조건 | GirlfriendGPT](https://girlfriendgpt.fun/ko/terms/): girlfriendgpt.fun의 독립 정보, 외부 서비스 및 자체 제작 콘텐츠의 이용 범위입니다.
+
+### 繁體中文 (zh-Hant)
+
+- [GirlfriendGPT](https://girlfriendgpt.fun/zh-hant/): 分辨 GirlfriendGPT 的社群角色與自建人物，分開評估聊天、圖片生成、點數和個資處理，並比較五種不同取向的替代產品。
+- [五篇 GirlfriendGPT 比較](https://girlfriendgpt.fun/zh-hant/blog/): 從建立人物、模型設定、圖片製作、找角色與關係延續五個角度，各自回答不同的使用問題。
+- [GirlfriendGPT 與 Candy AI 比較：探索角色還是建立伴侶](https://girlfriendgpt.fun/zh-hant/blog/girlfriendgpt-vs-candy-ai/): 比較 GirlfriendGPT 和 Candy AI 的角色來源、人物設定、聊天延續、影像費用及私隱。
+- [GirlfriendGPT 與 CrushOn AI 比較：角色與模型控制](https://girlfriendgpt.fun/zh-hant/blog/girlfriendgpt-vs-crushon-ai/): 以角色建立、模型選擇、儲存記憶、長對話成本及公開設定比較 GirlfriendGPT 和 CrushOn AI。
+- [GirlfriendGPT 與 OurDream AI 比較：對話人物與視覺人物](https://girlfriendgpt.fun/zh-hant/blog/girlfriendgpt-vs-ourdream-ai/): 比較 GirlfriendGPT 和 OurDream AI 的人物外貌一致性、文字設定、圖片與影片工作流、重試成本及素材權利。
+- [GirlfriendGPT 與 SpicyChat AI 比較：找角色與聊得長久](https://girlfriendgpt.fun/zh-hant/blog/girlfriendgpt-vs-spicychat-ai/): 由標籤、人物卡、開場白到長篇角色扮演，逐項比較 GirlfriendGPT 和 SpicyChat AI 的探索與收費。
+- [GirlfriendGPT 與 Lovescape 比較：自由角色或關係進程](https://girlfriendgpt.fun/zh-hant/blog/girlfriendgpt-vs-lovescape/): 從角色控制、關係故事、影像功能、支出與私隱評估 GirlfriendGPT 和 Lovescape 的不同用途。
+- [關於本站 | GirlfriendGPT](https://girlfriendgpt.fun/zh-hant/about/): girlfriendgpt.fun 的獨立編輯定位，以及角色探索、建立、對話與圖片的評估方法。
+- [編輯方針 | GirlfriendGPT](https://girlfriendgpt.fun/zh-hant/editorial-policy/): GirlfriendGPT 比較文章的第一手資料、讀者測試、成人安全要求及更正程序。
+- [聯絡本站 | GirlfriendGPT](https://girlfriendgpt.fun/zh-hant/contact/): 對 girlfriendgpt.fun 文章、圖片權利及無障礙問題提出更正時的資料與聯絡限制。
+- [隱私 | GirlfriendGPT](https://girlfriendgpt.fun/zh-hant/privacy/): 獨立靜態網站 girlfriendgpt.fun 的技術請求資料、選擇性流量分析及外部連結。
+- [使用條款 | GirlfriendGPT](https://girlfriendgpt.fun/zh-hant/terms/): girlfriendgpt.fun 獨立資料、外部服務與本站原創文字和設計的使用界線。
+
+### Español (es)
+
+- [GirlfriendGPT](https://girlfriendgpt.fun/es/): GirlfriendGPT: distingue entre descubrir personajes de la comunidad y crear uno propio. Revisa chat, imágenes, créditos y privacidad antes de comparar cinco alternativas.
+- [Cinco comparativas de GirlfriendGPT](https://girlfriendgpt.fun/es/blog/): Personajes, modelos, imágenes, descubrimiento y vínculos requieren criterios distintos.
+- [GirlfriendGPT vs Candy AI: catálogo abierto o compañía a medida](https://girlfriendgpt.fun/es/blog/girlfriendgpt-vs-candy-ai/): Compara cómo elegir personajes, crear uno propio, mantener una conversación y pagar imágenes o voz en GirlfriendGPT y Candy AI.
+- [GirlfriendGPT vs CrushOn AI: personajes, modelos y memoria](https://girlfriendgpt.fun/es/blog/girlfriendgpt-vs-crushon-ai/): Compara creación de personajes, elección de modelo, recuerdos guardados, coste de chats largos y privacidad en GirlfriendGPT y CrushOn AI.
+- [GirlfriendGPT vs OurDream AI: del personaje escrito al visual](https://girlfriendgpt.fun/es/blog/girlfriendgpt-vs-ourdream-ai/): Contrasta continuidad de la apariencia, conexión entre chat e imágenes, reintentos, créditos y derechos de imagen de GirlfriendGPT y OurDream AI.
+- [GirlfriendGPT vs SpicyChat AI: encontrar personajes y sostener el rol](https://girlfriendgpt.fun/es/blog/girlfriendgpt-vs-spicychat-ai/): Evalúa etiquetas, fichas, saludos, continuidad narrativa, límites gratuitos y reglas de comunidad en GirlfriendGPT y SpicyChat AI.
+- [GirlfriendGPT vs Lovescape: libertad de personaje o avance del vínculo](https://girlfriendgpt.fun/es/blog/girlfriendgpt-vs-lovescape/): Compara control del personaje, progreso narrativo, imágenes, vídeo, privacidad y coste de GirlfriendGPT frente a Lovescape.
+- [Sobre este sitio | GirlfriendGPT](https://girlfriendgpt.fun/es/about/): Propósito editorial independiente de girlfriendgpt.fun y método para valorar personajes, diálogo, imágenes y coste.
+- [Política editorial | GirlfriendGPT](https://girlfriendgpt.fun/es/editorial-policy/): Fuentes primarias, pruebas sugeridas, límites de seguridad para adultos y rectificaciones de comparativas GirlfriendGPT.
+- [Contacto | GirlfriendGPT](https://girlfriendgpt.fun/es/contact/): Cómo señalar errores de información, derechos de imagen o accesibilidad en girlfriendgpt.fun sin compartir material privado.
+- [Privacidad | GirlfriendGPT](https://girlfriendgpt.fun/es/privacy/): Datos técnicos, analítica opcional y enlaces externos de la publicación estática girlfriendgpt.fun.
+- [Condiciones de uso | GirlfriendGPT](https://girlfriendgpt.fun/es/terms/): Alcance de la información independiente, los servicios externos y el contenido original de girlfriendgpt.fun.
+
+### Português (Brasil) (pt-BR)
+
+- [GirlfriendGPT](https://girlfriendgpt.fun/pt-br/): GirlfriendGPT: explore personagens da comunidade ou crie o seu, avaliando conversa, imagem, créditos e privacidade. Cinco comparações para objetivos diferentes.
+- [Cinco comparações do GirlfriendGPT](https://girlfriendgpt.fun/pt-br/blog/): Criação, modelos, imagens, descoberta e evolução do vínculo pedem critérios próprios.
+- [GirlfriendGPT vs Candy AI: catálogo ou companhia personalizada](https://girlfriendgpt.fun/pt-br/blog/girlfriendgpt-vs-candy-ai/): Compare descoberta de personagens, criação guiada, continuidade do chat, mídia, créditos e privacidade no GirlfriendGPT e Candy AI.
+- [GirlfriendGPT vs CrushOn AI: personagem, modelo e memória](https://girlfriendgpt.fun/pt-br/blog/girlfriendgpt-vs-crushon-ai/): Compare fichas de personagens, seleção de modelo, lembranças salvas, custo de chat longo e privacidade em GirlfriendGPT e CrushOn AI.
+- [GirlfriendGPT vs OurDream AI: a personagem do chat também aparece nas imagens?](https://girlfriendgpt.fun/pt-br/blog/girlfriendgpt-vs-ourdream-ai/): Compare consistência visual, passagem do diálogo à imagem, tentativas refeitas, créditos e direitos de imagem no GirlfriendGPT e OurDream AI.
+- [GirlfriendGPT vs SpicyChat AI: achar personagens e sustentar o roleplay](https://girlfriendgpt.fun/pt-br/blog/girlfriendgpt-vs-spicychat-ai/): Avalie tags, fichas, primeira fala, continuidade, limites gratuitos e regras de comunidade de GirlfriendGPT e SpicyChat AI.
+- [GirlfriendGPT vs Lovescape: liberdade de criação ou evolução do vínculo](https://girlfriendgpt.fun/pt-br/blog/girlfriendgpt-vs-lovescape/): Compare controle de personagens, desenvolvimento da relação, imagem, vídeo, custo e privacidade de GirlfriendGPT e Lovescape.
+- [Sobre este site | GirlfriendGPT](https://girlfriendgpt.fun/pt-br/about/): Propósito editorial independente de girlfriendgpt.fun e critérios para avaliar personagens, conversa, imagens e custos.
+- [Política editorial | GirlfriendGPT](https://girlfriendgpt.fun/pt-br/editorial-policy/): Fontes oficiais, testes sugeridos, limites para adultos e correções nas comparações GirlfriendGPT.
+- [Contato | GirlfriendGPT](https://girlfriendgpt.fun/pt-br/contact/): Orientações para apontar erros, questões de imagem e acessibilidade em girlfriendgpt.fun sem enviar dados privados.
+- [Privacidade | GirlfriendGPT](https://girlfriendgpt.fun/pt-br/privacy/): Dados técnicos, análise voluntária de visitas e links externos do site estático girlfriendgpt.fun.
+- [Termos de uso | GirlfriendGPT](https://girlfriendgpt.fun/pt-br/terms/): Limites da informação independente, serviços externos e textos originais de girlfriendgpt.fun.
+
+### Русский (ru)
+
+- [GirlfriendGPT](https://girlfriendgpt.fun/ru/): GirlfriendGPT: поиск готовых персонажей и создание своих, качество диалога, изображения, кредиты и конфиденциальность. Пять сравнений по разным задачам.
+- [Пять сравнений GirlfriendGPT](https://girlfriendgpt.fun/ru/blog/): Создание героя, модели, изображения, поиск и развитие отношений требуют разных критериев.
+- [GirlfriendGPT и Candy AI: каталог героинь или собственная спутница](https://girlfriendgpt.fun/ru/blog/girlfriendgpt-vs-candy-ai/): Сравниваем поиск персонажей, создание личного образа, связность диалога, цену медиа и приватность GirlfriendGPT и Candy AI.
+- [GirlfriendGPT и CrushOn AI: персонаж, модель и память](https://girlfriendgpt.fun/ru/blog/girlfriendgpt-vs-crushon-ai/): Персонажи, выбор модели, сохранённые воспоминания, расходы длинного чата и видимость настроек в GirlfriendGPT и CrushOn AI.
+- [GirlfriendGPT и OurDream AI: сохраняется ли образ между чатом и картинками?](https://girlfriendgpt.fun/ru/blog/girlfriendgpt-vs-ourdream-ai/): Сравниваем внешнюю последовательность персонажа, связь диалога и изображений, кредиты, повторы и права на исходные материалы.
+- [GirlfriendGPT и SpicyChat AI: найти персонажа и удержать роль](https://girlfriendgpt.fun/ru/blog/girlfriendgpt-vs-spicychat-ai/): Сравнение тегов, карточек, первой реплики, продолжительного ролеплея, платных функций и правил сообщества.
+- [GirlfriendGPT и Lovescape: свобода героя или развитие отношений](https://girlfriendgpt.fun/ru/blog/girlfriendgpt-vs-lovescape/): Сравниваем управление персонажем, сюжет отношений, изображения, видео, расходы и сохранность данных GirlfriendGPT и Lovescape.
+- [О сайте | GirlfriendGPT](https://girlfriendgpt.fun/ru/about/): Независимая редакционная задача girlfriendgpt.fun и критерии оценки персонажей, диалогов, изображений и затрат.
+- [Редакционная политика | GirlfriendGPT](https://girlfriendgpt.fun/ru/editorial-policy/): Первичные источники, повторяемые проверки, взрослые границы безопасности и исправления в сравнительных статьях.
+- [Контакты | GirlfriendGPT](https://girlfriendgpt.fun/ru/contact/): Как сообщить об ошибке, правах на изображение или доступности girlfriendgpt.fun, не передавая личные материалы.
+- [Конфиденциальность | GirlfriendGPT](https://girlfriendgpt.fun/ru/privacy/): Технические запросы, добровольная аналитика и внешние ссылки независимого статического сайта girlfriendgpt.fun.
+- [Условия использования | GirlfriendGPT](https://girlfriendgpt.fun/ru/terms/): Границы независимой информации, внешних сервисов и авторских материалов girlfriendgpt.fun.
+
+### Deutsch (de)
+
+- [GirlfriendGPT](https://girlfriendgpt.fun/de/): GirlfriendGPT: Community-Figuren finden oder selbst gestalten. Chat, Bildgenerierung, Credits und Datenschutz getrennt prüfen und mit fünf Alternativen vergleichen.
+- [Fünf Vergleiche zu GirlfriendGPT](https://girlfriendgpt.fun/de/blog/): Figurengestaltung, Modelle, Bilder, Entdeckung und Beziehung brauchen eigene Maßstäbe.
+- [GirlfriendGPT oder Candy AI: Figurenkatalog oder eigener Begleiter?](https://girlfriendgpt.fun/de/blog/girlfriendgpt-vs-candy-ai/): Vergleich von Figurensuche, geführter Gestaltung, Dialog, Medienkosten und Datenschutz bei GirlfriendGPT und Candy AI.
+- [GirlfriendGPT und CrushOn AI: Figur, Modell und Erinnerung](https://girlfriendgpt.fun/de/blog/girlfriendgpt-vs-crushon-ai/): Figurenprofile, Modellwahl, gespeicherte Erinnerungen, lange Chats und Privatsphäre bei GirlfriendGPT und CrushOn AI.
+- [GirlfriendGPT oder OurDream AI: bleibt die Figur im Bild dieselbe?](https://girlfriendgpt.fun/de/blog/girlfriendgpt-vs-ourdream-ai/): Vergleich von Bildkonsistenz, Verbindung zwischen Chat und Bild, Wiederholungen, Credits und Bildrechten.
+- [GirlfriendGPT und SpicyChat AI: Figuren finden, Rollen halten](https://girlfriendgpt.fun/de/blog/girlfriendgpt-vs-spicychat-ai/): Tags, Figurenkarten, Einstieg, langer Dialog, Gratisgrenzen und Community-Regeln bei GirlfriendGPT und SpicyChat AI.
+- [GirlfriendGPT und Lovescape: freie Rollen oder geführte Beziehung?](https://girlfriendgpt.fun/de/blog/girlfriendgpt-vs-lovescape/): Vergleich von Figurenkontrolle, Beziehungsstory, Bild und Video, Preisen und Daten bei GirlfriendGPT und Lovescape.
+- [Über diese Seite | GirlfriendGPT](https://girlfriendgpt.fun/de/about/): Die unabhängige Redaktion hinter girlfriendgpt.fun und ihre Maßstäbe für Figuren, Chat, Bilder und Kosten.
+- [Redaktionsgrundsätze | GirlfriendGPT](https://girlfriendgpt.fun/de/editorial-policy/): Primärquellen, vorgeschlagene Prüfungen, Grenzen für Erwachsene und Korrekturen der GirlfriendGPT-Vergleiche.
+- [Kontakt | GirlfriendGPT](https://girlfriendgpt.fun/de/contact/): Hinweise zu sachlichen Fehlern, Bildrechten und Zugänglichkeit auf girlfriendgpt.fun ohne private Unterlagen.
+- [Datenschutz | GirlfriendGPT](https://girlfriendgpt.fun/de/privacy/): Technische Anfragen, freiwillige Webanalyse und externe Links auf der statischen Seite girlfriendgpt.fun.
+- [Nutzungsbedingungen | GirlfriendGPT](https://girlfriendgpt.fun/de/terms/): Grenzen unabhängiger Informationen, externer Dienste und eigener Inhalte auf girlfriendgpt.fun.
+
+### Français (fr)
+
+- [GirlfriendGPT](https://girlfriendgpt.fun/fr/): GirlfriendGPT : distinguer personnages communautaires et créations personnelles, puis examiner dialogue, images, crédits et données avant cinq comparatifs ciblés.
+- [Cinq comparatifs GirlfriendGPT](https://girlfriendgpt.fun/fr/blog/): Création, modèles, images, découverte et progression du lien appellent des critères distincts.
+- [GirlfriendGPT ou Candy AI : catalogue de personnages ou compagnon sur mesure ?](https://girlfriendgpt.fun/fr/blog/girlfriendgpt-vs-candy-ai/): Comparer découverte, création guidée, continuité du dialogue, prix des médias et confidentialité de GirlfriendGPT et Candy AI.
+- [GirlfriendGPT et CrushOn AI : personnage, modèle et mémoire](https://girlfriendgpt.fun/fr/blog/girlfriendgpt-vs-crushon-ai/): Comparer création de personnages, choix du modèle, souvenirs enregistrés, coût des longs échanges et visibilité des données.
+- [GirlfriendGPT ou OurDream AI : un personnage reconnaissable du chat à l'image](https://girlfriendgpt.fun/fr/blog/girlfriendgpt-vs-ourdream-ai/): Comparer identité visuelle, passage du dialogue à l'image, essais ratés, crédits et droits sur les visuels.
+- [GirlfriendGPT et SpicyChat AI : trouver un rôle et le tenir](https://girlfriendgpt.fun/fr/blog/girlfriendgpt-vs-spicychat-ai/): Comparer tags, fiches, première réplique, scénario long, limites gratuites et règles communautaires.
+- [GirlfriendGPT et Lovescape : rôle libre ou évolution du lien ?](https://girlfriendgpt.fun/fr/blog/girlfriendgpt-vs-lovescape/): Comparer liberté de création, récit relationnel, images, vidéos, coût et conservation des données sur GirlfriendGPT et Lovescape.
+- [À propos | GirlfriendGPT](https://girlfriendgpt.fun/fr/about/): Mission éditoriale indépendante de girlfriendgpt.fun et critères pour examiner personnages, dialogue, images et prix.
+- [Politique éditoriale | GirlfriendGPT](https://girlfriendgpt.fun/fr/editorial-policy/): Sources primaires, essais suggérés, protection des adultes et corrections des comparatifs GirlfriendGPT.
+- [Contact | GirlfriendGPT](https://girlfriendgpt.fun/fr/contact/): Signaler une erreur, un droit à l'image ou un souci d'accessibilité sur girlfriendgpt.fun sans envoyer de données intimes.
+- [Confidentialité | GirlfriendGPT](https://girlfriendgpt.fun/fr/privacy/): Données techniques, mesure d'audience facultative et liens externes du site statique girlfriendgpt.fun.
+- [Conditions d'utilisation | GirlfriendGPT](https://girlfriendgpt.fun/fr/terms/): Portée de l'information indépendante, des services externes et des créations originales de girlfriendgpt.fun.
+
+### العربية (ar)
+
+- [GirlfriendGPT](https://girlfriendgpt.fun/ar/): GirlfriendGPT: اكتشاف شخصيات المجتمع أو ابتكار شخصية، ثم تقييم المحادثة والصور والأرصدة والخصوصية عبر خمس مقارنات مختلفة الهدف.
+- [خمس مقارنات لـ GirlfriendGPT](https://girlfriendgpt.fun/ar/blog/): إنشاء الشخصية والنماذج والصور والاكتشاف وتطور العلاقة لكل منها معيار مختلف.
+- [GirlfriendGPT أم Candy AI: شخصيات المجتمع أم رفيق تصممه؟](https://girlfriendgpt.fun/ar/blog/girlfriendgpt-vs-candy-ai/): مقارنة البحث عن الشخصيات وإنشاء رفيق والحوار والصور والصوت والتكلفة والخصوصية في GirlfriendGPT وCandy AI.
+- [GirlfriendGPT وCrushOn AI: الشخصية والنموذج والذاكرة](https://girlfriendgpt.fun/ar/blog/girlfriendgpt-vs-crushon-ai/): مقارنة إنشاء الشخصيات واختيار النموذج والذكريات المحفوظة وتكلفة المحادثة الطويلة وإعدادات الخصوصية.
+- [GirlfriendGPT وOurDream AI: هل تبقى شخصية الحوار نفسها في الصور؟](https://girlfriendgpt.fun/ar/blog/girlfriendgpt-vs-ourdream-ai/): مقارنة ثبات المظهر وانتقال إعدادات المحادثة إلى الصورة والمحاولات والأرصدة وحقوق المواد الأصلية.
+- [GirlfriendGPT وSpicyChat AI: العثور على شخصية والمحافظة على دورها](https://girlfriendgpt.fun/ar/blog/girlfriendgpt-vs-spicychat-ai/): مقارنة الوسوم والبطاقات والتحية والحوار الطويل والحدود المجانية وقواعد المجتمع.
+- [GirlfriendGPT وLovescape: حرية الشخصية أم تطور العلاقة؟](https://girlfriendgpt.fun/ar/blog/girlfriendgpt-vs-lovescape/): مقارنة ضبط الشخصية وسرد العلاقة والصور والفيديو والتكلفة وحفظ البيانات في GirlfriendGPT وLovescape.
+- [عن الموقع | GirlfriendGPT](https://girlfriendgpt.fun/ar/about/): مهمة girlfriendgpt.fun التحريرية المستقلة ومعايير تقييم الشخصيات والحوار والصور والتكلفة.
+- [السياسة التحريرية | GirlfriendGPT](https://girlfriendgpt.fun/ar/editorial-policy/): المصادر الأولية والاختبارات المقترحة وحدود سلامة البالغين والتصحيح في مقارنات GirlfriendGPT.
+- [الاتصال | GirlfriendGPT](https://girlfriendgpt.fun/ar/contact/): الإبلاغ عن خطأ أو حق صورة أو مشكلة وصول في girlfriendgpt.fun دون مشاركة مواد خاصة.
+- [الخصوصية | GirlfriendGPT](https://girlfriendgpt.fun/ar/privacy/): بيانات الطلبات التقنية والتحليل الاختياري والروابط الخارجية في الموقع الثابت girlfriendgpt.fun.
+- [شروط الاستخدام | GirlfriendGPT](https://girlfriendgpt.fun/ar/terms/): حدود معلومات girlfriendgpt.fun المستقلة والخدمات الخارجية والمحتوى الأصلي.
+
 ## Optional
 
 - [XML sitemap](https://girlfriendgpt.fun/sitemap-index.xml): Canonical page inventory.

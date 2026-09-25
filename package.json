@@ -11,6 +11,8 @@
     "build": "node scripts/run-astro.mjs build && node scripts/prepare-sites-build.mjs",
     "preview": "node scripts/run-astro.mjs preview",
     "test:seo": "node scripts/audit-static.mjs",
+    "test:locales": "node scripts/audit-locales.mjs",
+    "test:locales:browser": "node scripts/audit-locales-browser.mjs",
     "test:sites": "node --test tests/sites-worker.test.mjs",
     "generate:llms": "node scripts/generate-llms.mjs",
     "test:llms": "node scripts/generate-llms.mjs --check",

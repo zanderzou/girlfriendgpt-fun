@@ -2,12 +2,30 @@
 import type { CollectionEntry } from "astro:content";
 import Icon from "./Icon.astro";
 import { site } from "../data/site";
-interface Props { posts: CollectionEntry<"blog">[]; }
-const { posts } = Astro.props;
+import { localizedUi } from "../data/localized-ui";
+import { comparisonCopy, comparisonKeys } from "../data/localized-articles";
+import type { SiteLocale } from "../data/locale-routes";
+import type { LocaleSlug } from "../data/localized-girlfriendgpt";
+interface Props { posts: CollectionEntry<"blog">[]; locale?: SiteLocale; }
+const { posts, locale="en" } = Astro.props;
+const ui=locale==="en"?null:localizedUi[locale];
+const base=locale==="en"?"/":`/${locale}/`;
+const latest=locale==="en"?posts.slice(0,3).map((post)=>({title:post.data.title,href:`/blog/${post.id}/`})):comparisonKeys.slice(0,3).map((key)=>({title:comparisonCopy[locale]![key].title,href:`${base}blog/girlfriendgpt-vs-${key}/`}));
+const notices:Record<LocaleSlug,[string,string]>={
+  ja:["独立した編集サイト · 公式運営ではありません","成人向け · チャットデータは収集しません"],
+  ko:["독립 편집 사이트 · 공식 운영자가 아닙니다","성인 대상 · 대화 데이터를 받지 않습니다"],
+  "zh-hant":["獨立編輯網站 · 並非官方營運","僅限成年人 · 不接收聊天資料"],
+  es:["Publicación independiente · No somos el operador","Solo adultos · No recibimos chats"],
+  "pt-br":["Publicação independente · Não operamos o produto","Apenas adultos · Não recebemos conversas"],
+  ru:["Независимое издание · Не оператор сервиса","Только для взрослых · Не собираем переписку"],
+  de:["Unabhängige Redaktion · Nicht der Anbieter","Nur für Erwachsene · Keine Chatdaten"],
+  fr:["Publication indépendante · Pas l'exploitant","Réservé aux adultes · Aucun chat recueilli"],
+  ar:["منشور مستقل · لسنا مشغّل الخدمة","للبالغين فقط · لا نجمع المحادثات"],
+};
 ---
 <footer><div class="footer-grid">
-  <div><a class="brand" href="/"><span class="brand-icon">♥</span><strong>Girlfriend<span>GPT</span></strong></a><p>Independent research on GirlfriendGPT chat, characters, voice, images, privacy, pricing, safety, and AI girlfriend alternatives.</p></div>
-  <div><h3>Explore</h3><a href="/#features">GirlfriendGPT features</a><a href="/#compare">AI girlfriend comparisons</a><a href="/#privacy">Privacy checklist</a><a href={site.officialUrl} rel="noopener" target="_blank">Official website <Icon name="arrow" /></a></div>
-  <div><h3>Latest guides</h3>{posts.slice(0,3).map((post)=><a href={`/blog/${post.id}/`}>{post.data.title}</a>)}</div>
-  <div><h3>Information</h3><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/editorial-policy/">Editorial policy</a><a href="/contact/">Contact</a></div>
-</div><div class="footer-bottom"><span>© <span data-year>2026</span> GirlfriendGPT</span><span>Independent · Not affiliated with GirlfriendGPT</span><span>Adults only · No chat data collected</span></div></footer>
+  <div><a class="brand" href={base}><span class="brand-icon">♥</span><strong>Girlfriend<span>GPT</span></strong></a><p>{ui?.blogIntro??"Independent research on GirlfriendGPT chat, characters, voice, images, privacy, pricing, safety, and AI girlfriend alternatives."}</p></div>
+  <div><h3>{ui?.discover??"Explore"}</h3><a href={`${base}${locale==="en"?"#features":"#discover"}`}>{ui?.discover??"GirlfriendGPT features"}</a><a href={`${base}#compare`}>{ui?.compare??"AI girlfriend comparisons"}</a><a href={`${base}${locale==="en"?"#privacy":"#safety"}`}>{ui?.privacy??"Privacy checklist"}</a><a href={site.officialUrl} rel="noopener" target="_blank">{ui?.official??"Official website"} <Icon name="arrow" /></a></div>
+  <div><h3>{ui?.blog??"Latest guides"}</h3>{latest.map((item)=><a href={item.href}>{item.title}</a>)}</div>
+  <div><h3>{ui?.information??"Information"}</h3><a href={`${base}about/`}>{ui?.about??"About"}</a><a href={`${base}privacy/`}>{ui?.privacy??"Privacy"}</a><a href={`${base}terms/`}>{ui?.terms??"Terms"}</a><a href={`${base}editorial-policy/`}>{ui?.editorial??"Editorial policy"}</a><a href={`${base}contact/`}>{ui?.contact??"Contact"}</a></div>
+</div><div class="footer-bottom"><span>© <span data-year>2026</span> GirlfriendGPT</span><span>{locale==="en"?"Independent · Not affiliated with GirlfriendGPT":notices[locale][0]}</span><span>{locale==="en"?"Adults only · No chat data collected":notices[locale][1]}</span></div></footer>
