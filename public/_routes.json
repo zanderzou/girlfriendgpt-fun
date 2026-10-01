@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "include": [
+    "/ja",
+    "/ja/*",
+    "/ko",
+    "/ko/*",
+    "/zh-hant",
+    "/zh-hant/*",
+    "/pt-br",
+    "/pt-br/*",
+    "/ru",
+    "/ru/*",
+    "/de",
+    "/de/*",
+    "/fr",
+    "/fr/*",
+    "/ar",
+    "/ar/*"
+  ],
+  "exclude": []
+}
