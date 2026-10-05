@@ -16,7 +16,8 @@
     "test:sites": "node --test tests/sites-worker.test.mjs",
     "generate:llms": "node scripts/generate-llms.mjs",
     "test:llms": "node scripts/generate-llms.mjs --check",
-    "prebuild": "npm run generate:llms"
+    "prebuild": "npm run generate:llms",
+    "postbuild": "node scripts/finalize-localized-release.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
