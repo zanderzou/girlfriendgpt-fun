@@ -4,6 +4,9 @@
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
 
+/googled31eacbcae6f3153.html
+  X-Robots-Tag: noindex
+
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
