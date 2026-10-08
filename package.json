@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "node scripts/run-astro.mjs dev",
-    "build": "node scripts/run-astro.mjs build && node scripts/prepare-sites-build.mjs",
+    "build": "node scripts/build-editorial-releases.mjs",
     "preview": "node scripts/run-astro.mjs preview",
     "test:seo": "node scripts/audit-static.mjs",
     "test:locales": "node scripts/audit-locales.mjs",
@@ -17,7 +17,7 @@
     "generate:llms": "node scripts/generate-llms.mjs",
     "test:llms": "node scripts/generate-llms.mjs --check",
     "prebuild": "npm run generate:llms",
-    "postbuild": "node scripts/finalize-localized-release.mjs"
+    "build:static": "node scripts/run-astro.mjs build --config astro.editorial.config.mjs && node scripts/prepare-sites-build.mjs && node scripts/finalize-localized-release.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

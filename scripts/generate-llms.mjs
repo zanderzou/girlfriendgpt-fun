@@ -32,13 +32,21 @@ for(const locale of localeList){
  for(const [,key] of optional)localized.push(`- [${info[key].title}](${origin}${root}${key}/): ${info[key].description}`);
  localized.push('');
 }
-const text=[`# ${name}`,'',`> ${description}`,'',`Canonical publication: ${origin}/`,'','This is an independent editorial publication, not the official provider. Articles distinguish published provider information from suggested evaluation methods. Examples and proposed tests are not measured benchmark results. Check dated sources and live provider terms for changing features and prices.','',
+let text =[`# ${name}`,'',`> ${description}`,'',`Canonical publication: ${origin}/`,'','This is an independent editorial publication, not the official provider. Articles distinguish published provider information from suggested evaluation methods. Examples and proposed tests are not measured benchmark results. Check dated sources and live provider terms for changing features and prices.','',
  '## Main pages','',...links.map(([title,route,note])=>`- [${title}](${origin}${route}): ${note}`),'',
  '## Language editions','',...languages.map(([title,slug])=>`- [${title}](${origin}/${slug}/): Localized homepage, publication pages, and five comparison articles.`),'',
  '## Comparisons','',...articles.map(a=>`- [${label(a.title)}](${origin}/blog/${a.slug}/)`),'',
  '## Publication information','',...optional.map(([title,slug])=>`- [${title}](${origin}/${slug}/)`),'',
  '## Localized editions','',...localized,
  '## Optional','',`- [XML sitemap](${origin}/sitemap-index.xml): Canonical page inventory.`,`- [RSS feed](${origin}/rss.xml): Published article updates.`,`- [Robots policy](${origin}/robots.txt): Crawler access directives.`,''].join('\n');
+
+// New English articles do not create language counterparts.
+const englishEditorialSet = new Set(JSON.parse(readFileSync(path.join(root, 'src/data/editorialSchedule.json'), 'utf8')).articles.map(a => a.slug));
+function filterEnglishEditorialLinks(line) {
+  const match = line.match(/https:\/\/[^/]+\/(?:ja|ko|zh-hant|es|pt-br|ru|de|fr|ar)\/blog\/([^/)\s]+)\//i);
+  return !match || !englishEditorialSet.has(match[1]);
+}
+text = text.split('\n').filter(filterEnglishEditorialLinks).join('\n');
 const destination=path.join(root,'public/llms.txt');
 if(process.argv.includes('--check')){
  if(!existsSync(destination)||readFileSync(destination,'utf8')!==text)throw Error('llms.txt is missing or stale; run npm run generate:llms');
