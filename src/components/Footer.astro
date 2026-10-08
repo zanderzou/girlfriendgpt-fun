@@ -24,7 +24,7 @@ const notices:Record<LocaleSlug,[string,string]>={
 };
 ---
 <footer><div class="footer-grid">
-  <div><a class="brand" href={base}><span class="brand-icon">♥</span><strong>Girlfriend<span>GPT</span></strong></a><p>{ui?.blogIntro??"Independent research on Girlfriend GPT chat, characters, voice, images, privacy, pricing, safety, and AI girlfriend alternatives."}</p></div>
+  <div><a class="brand" href={base}><span class="brand-icon">♥</span><strong>Girlfriend <span>GPT</span></strong></a><p>{ui?.blogIntro??"Independent research on Girlfriend GPT chat, characters, voice, images, privacy, pricing, safety, and AI girlfriend alternatives."}</p></div>
   <div><h3>{ui?.discover??"Explore"}</h3><a href={`${base}${locale==="en"?"#features":"#discover"}`}>{ui?.discover??"Girlfriend GPT features"}</a><a href={`${base}#compare`}>{ui?.compare??"AI girlfriend comparisons"}</a><a href={`${base}${locale==="en"?"#privacy":"#safety"}`}>{ui?.privacy??"Privacy checklist"}</a><a href={site.officialUrl} rel="noopener" target="_blank">{ui?.official??"Official website"} <Icon name="arrow" /></a></div>
   <div><h3>{ui?.blog??"Latest guides"}</h3>{latest.map((item)=><a href={item.href}>{item.title}</a>)}</div>
   <div><h3>{ui?.information??"Information"}</h3><a href={`${base}about/`}>{ui?.about??"About"}</a><a href={`${base}privacy/`}>{ui?.privacy??"Privacy"}</a><a href={`${base}terms/`}>{ui?.terms??"Terms"}</a><a href={`${base}editorial-policy/`}>{ui?.editorial??"Editorial policy"}</a><a href={`${base}contact/`}>{ui?.contact??"Contact"}</a></div>
