@@ -34,11 +34,11 @@ const jsonLd = {
   ],
 };
 ---
-<BaseLayout title={`${post.data.title} | GirlfriendGPT`} description={post.data.description} type="article" keywords={post.data.keywords} publishedTime={published} modifiedTime={modified} jsonLd={jsonLd}>
+<BaseLayout title={`${post.data.title} | Girlfriend GPT`} description={post.data.description} type="article" keywords={post.data.keywords} publishedTime={published} modifiedTime={modified} jsonLd={jsonLd}>
   <article class="article-shell">
     <header class="article-header">
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span><span>{post.data.category}</span></nav>
-      <a class="back-link" href="/blog/">← All GirlfriendGPT comparisons</a>
+      <a class="back-link" href="/blog/">← All Girlfriend GPT comparisons</a>
       <div class="post-meta"><span>{post.data.category}</span><time datetime={toIsoDate(post.data.publishDate)}>{formatDate(post.data.publishDate)}</time><span>{post.data.readTime}</span></div>
       <h1>{post.data.title}</h1><p>{post.data.description}</p>
       <div class="byline"><span class="brand-icon">♥</span><div><strong>{site.author}</strong><small>Independent research · Reviewed {formatDate(post.data.updatedDate)}</small></div></div>
@@ -52,5 +52,5 @@ const jsonLd = {
       </div>
     </div>
   </article>
-  <section class="section related" id="related"><div class="section-head"><div><div class="section-label">Continue exploring</div><h2>Related GirlfriendGPT<br /><span>comparisons.</span></h2></div></div><div class="post-grid compact">{related.map((item, index) => <PostCard post={item} index={index} compact />)}</div></section>
+  <section class="section related" id="related"><div class="section-head"><div><div class="section-label">Continue exploring</div><h2>Related Girlfriend GPT<br /><span>comparisons.</span></h2></div></div><div class="post-grid compact">{related.map((item, index) => <PostCard post={item} index={index} compact />)}</div></section>
 </BaseLayout>

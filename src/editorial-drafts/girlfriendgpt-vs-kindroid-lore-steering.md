@@ -1,21 +1,21 @@
 ---
-title: "GirlfriendGPT vs Kindroid: World Facts and Voice"
-description: "Compare GirlfriendGPT and Kindroid for an original fictional character, keeping stable world facts, dialogue style and temporary scene instructions separate."
+title: "Girlfriend GPT vs Kindroid: World Facts and Voice"
+description: "Compare Girlfriend GPT and Kindroid for an original fictional character, keeping stable world facts, dialogue style and temporary scene instructions separate."
 publishDate: 2026-10-15T16:25:28.683Z
 updatedDate: 2026-10-08T05:17:20.878Z
 category: "Comparison"
 readTime: "3 min read"
-answer: "Compare the current creator controls you can edit in GirlfriendGPT with Kindroid’s supported personality setup. Keep world facts, reply style and current-scene instructions distinct, then revise one at a time. A clear definition makes the comparison assessable; it does not guarantee every reply follows the intended lore."
+answer: "Compare the current creator controls you can edit in Girlfriend GPT with Kindroid’s supported personality setup. Keep world facts, reply style and current-scene instructions distinct, then revise one at a time. A clear definition makes the comparison assessable; it does not guarantee every reply follows the intended lore."
 accent: "rose"
-keywords: ["GirlfriendGPT vs Kindroid","Kindroid","lore steering"]
+keywords: ["Girlfriend GPT vs Kindroid","Kindroid","lore steering"]
 sources:
-  - name: "GirlfriendGPT Advanced Character Creation"
+  - name: "Girlfriend GPT Advanced Character Creation"
     url: "https://www.gptgirlfriend.online/create/advanced"
   - name: "Kindroid Personality Controls"
     url: "https://kindroid.ai/v2/docs/customizing-personality/"
 ---
 
-GirlfriendGPT vs Kindroid for lore steering is not just a question of how much text you can enter. A useful character definition separates what is true in the fictional world, how the character speaks and what is happening right now. Mixing those categories makes revisions harder to diagnose.
+Girlfriend GPT vs Kindroid for lore steering is not just a question of how much text you can enter. A useful character definition separates what is true in the fictional world, how the character speaks and what is happening right now. Mixing those categories makes revisions harder to diagnose.
 
 This article reviews official creation information on October 8, 2026. It proposes an original non-explicit writing exercise with adult fictional characters, not a tested ranking of instruction adherence.
 
@@ -35,7 +35,7 @@ The absence of electric lighting is world canon. Brief sentences are dialogue st
 
 ## Inspect the editable definition
 
-GirlfriendGPT exposes an advanced creation route. Inspect its current fields and what you can edit for your own character. A public character's visible card may not reveal every instruction used in a conversation, and selecting it does not give you the same control as authoring your own definition.
+Girlfriend GPT exposes an advanced creation route. Inspect its current fields and what you can edit for your own character. A public character's visible card may not reveal every instruction used in a conversation, and selecting it does not give you the same control as authoring your own definition.
 
 Kindroid documents personality controls. Map the same original brief to the supported setup without assuming field names or account access are identical across products. Keep a local copy so you can review the exact text you supplied.
 
@@ -49,4 +49,4 @@ Next, revise only the style request to make the reply more concise. Ask another 
 
 When a reply drifts, identify whether the problem concerns a world fact, a style choice or a temporary event. A short correction to the relevant layer is easier to assess than replacing the entire persona with a much longer description.
 
-Do not import a real person's private biography to make the exercise feel detailed. Original fictional constraints supply enough evidence for this comparison. See [GirlfriendGPT vs SpicyChat](/blog/girlfriendgpt-vs-spicychat-ai/) for another authoring route. Choose the setup that lets you locate and revise the relevant instruction while keeping the surrounding character coherent.
+Do not import a real person's private biography to make the exercise feel detailed. Original fictional constraints supply enough evidence for this comparison. See [Girlfriend GPT vs SpicyChat](/blog/girlfriendgpt-vs-spicychat-ai/) for another authoring route. Choose the setup that lets you locate and revise the relevant instruction while keeping the surrounding character coherent.

@@ -27,7 +27,7 @@ const localized=[];
 for(const locale of localeList){
  const slug=locale.slug,root=`/${slug}/`,copy=homeCopy[slug],ui=localizedUi[slug],info=infoCopy[slug],comparisons=comparisonCopy[slug];
  if(!copy||!ui||!info||!comparisons||Object.keys(info).length!==5||Object.keys(comparisons).length!==5)throw Error(`Incomplete localization: ${slug}`);
- localized.push(`### ${locale.label} (${locale.code})`,'',`- [GirlfriendGPT](${origin}${root}): ${copy.description}`,`- [${ui.blogHeading}](${origin}${root}blog/): ${ui.blogIntro}`);
+ localized.push(`### ${locale.label} (${locale.code})`,'',`- [Girlfriend GPT](${origin}${root}): ${copy.description}`,`- [${ui.blogHeading}](${origin}${root}blog/): ${ui.blogIntro}`);
  for(const key of comparisonKeys)localized.push(`- [${comparisons[key].title}](${origin}${root}blog/girlfriendgpt-vs-${key}/): ${comparisons[key].description}`);
  for(const [,key] of optional)localized.push(`- [${info[key].title}](${origin}${root}${key}/): ${info[key].description}`);
  localized.push('');

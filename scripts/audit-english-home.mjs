@@ -14,7 +14,7 @@ try {
       const rect = title.getBoundingClientRect();
       return { h1: title.textContent.trim(), titleHeight: rect.height, lineHeight: Number.parseFloat(getComputedStyle(title).lineHeight), overflow: document.documentElement.scrollWidth - innerWidth };
     });
-    if (response?.status() !== 200 || result.h1 !== "GirlfriendGPT" || result.titleHeight > result.lineHeight * 1.15 || result.overflow > 1) throw Error(`${width}px homepage failed: ${JSON.stringify(result)}`);
+    if (response?.status() !== 200 || result.h1 !== "Girlfriend GPT" || result.titleHeight > result.lineHeight * 1.15 || result.overflow > 1) throw Error(`${width}px homepage failed: ${JSON.stringify(result)}`);
     const screenshot = path.join(os.tmpdir(), `girlfriendgpt-home-${width}.png`);
     await page.screenshot({ path: screenshot, fullPage: false });
     console.log(`${width}px homepage passed; screenshot ${screenshot}`);

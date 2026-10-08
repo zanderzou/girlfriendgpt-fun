@@ -37,7 +37,7 @@ try {
         });
         const ok = response?.status() === 200 && result.lang === locale.code && result.dir === (locale.code === "ar" ? "rtl" : "ltr") && result.overflow <= 1 && result.headingWidth > 0 && result.headingLeft >= -2 && result.headingRight <= width + 2 && result.picker;
         if (!ok) failures.push(`${width}px ${pathname}: ${JSON.stringify({ status: response?.status(), ...result })}`);
-        if (route === "/" && (result.heading !== "GirlfriendGPT" || result.headingHeight > result.lineHeight * 1.2)) failures.push(`${width}px ${pathname}: homepage title wraps`);
+        if (route === "/" && (result.heading !== "Girlfriend GPT" || result.headingHeight > result.lineHeight * 1.2)) failures.push(`${width}px ${pathname}: homepage title wraps`);
         if (["ja", "de", "ar"].includes(locale.slug) && ["/", "/blog/girlfriendgpt-vs-candy-ai/"].includes(route)) {
           const name = `girlfriendgpt-${locale.slug}-${route === "/" ? "home" : "article"}-${width}.png`;
           await page.screenshot({ path: path.join(os.tmpdir(), name), fullPage: false });

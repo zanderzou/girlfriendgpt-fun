@@ -44,7 +44,7 @@ for (const pagePath of pagePaths) {
     check(sitemap.includes(`<loc>${origin}${route}</loc>`), `${route}: sitemap`);
     check(html.includes('property="og:title"') && html.includes('name="twitter:title"'), `${route}: social metadata`);
     check(html.includes('id="site-analytics"') && html.includes('src="/analytics-consent.js"'), `${route}: consent UI`);
-    if (pagePath === "/") check(html.includes("<h1>GirlfriendGPT</h1>"), `${route}: exact homepage keyword`);
+    if (pagePath === "/") check(html.includes("<h1>Girlfriend GPT</h1>"), `${route}: exact homepage keyword`);
     if (route.includes("/blog/girlfriendgpt-vs-")) {
       check(html.includes('class="locale-article-sources"') || code === "en", `${route}: cited sources`);
       check(!html.includes("DIRECT ANSWER"), `${route}: old module`);

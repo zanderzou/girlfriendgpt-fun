@@ -6,7 +6,7 @@
     {
       "order": 1,
       "slug": "girlfriendgpt-vs-nomi-many-or-one",
-      "title": "GirlfriendGPT vs Nomi: Explore Many or Keep One?",
+      "title": "Girlfriend GPT vs Nomi: Explore Many or Keep One?",
       "opponent": "Nomi",
       "readerQuestion": "screening many characters versus continuing with one companion",
       "releaseAt": "2026-10-08T05:17:20.878Z",
@@ -14,16 +14,16 @@
       "approved": true,
       "status": "editorially-reviewed",
       "sourcesCheckedAt": "2026-10-08",
-      "reviewedSha256": "04f66a2d32e7a2cfda915bf1658a6bfebdd632e3fecccc766f3e8040da4c20c1",
+      "reviewedSha256": "237d6d24b1a3edbaaad63e62ca77737ff6b02ff77b15a088fb274cbb11773c33",
       "wordCount": 491,
       "editorialIntent": "Choose between exploratory character sessions and sustained companion development without absolute feature labels.",
       "sources": [
         [
-          "GirlfriendGPT Official Website",
+          "Girlfriend GPT Official Website",
           "https://www.gptgirlfriend.online/"
         ],
         [
-          "GirlfriendGPT Advanced Character Creation",
+          "Girlfriend GPT Advanced Character Creation",
           "https://www.gptgirlfriend.online/create/advanced"
         ],
         [
@@ -35,7 +35,7 @@
     {
       "order": 2,
       "slug": "girlfriendgpt-vs-kindroid-lore-steering",
-      "title": "GirlfriendGPT vs Kindroid: World Facts and Voice",
+      "title": "Girlfriend GPT vs Kindroid: World Facts and Voice",
       "opponent": "Kindroid",
       "readerQuestion": "editing world facts separately from dialogue style",
       "releaseAt": "2026-10-15T16:25:28.683Z",
@@ -43,12 +43,12 @@
       "approved": true,
       "status": "editorially-reviewed",
       "sourcesCheckedAt": "2026-10-08",
-      "reviewedSha256": "45b569d4ee6959f181c7b5dff6cb07d909c6491a2f5cc5a85db24bb7fe2e5864",
+      "reviewedSha256": "1317eea3175cc9b9e01bf8ba6d1fcdef3ca50a61eecb9159c2145411f62787ad",
       "wordCount": 518,
       "editorialIntent": "Structure and revise an original fictional definition without mixing canon, style and scene state.",
       "sources": [
         [
-          "GirlfriendGPT Advanced Character Creation",
+          "Girlfriend GPT Advanced Character Creation",
           "https://www.gptgirlfriend.online/create/advanced"
         ],
         [
@@ -60,7 +60,7 @@
     {
       "order": 3,
       "slug": "girlfriendgpt-vs-replika-avatar-routine",
-      "title": "GirlfriendGPT vs Replika: Character or Avatar Routine",
+      "title": "Girlfriend GPT vs Replika: Character or Avatar Routine",
       "opponent": "Replika",
       "readerQuestion": "community character choice versus a recurring avatar-based routine",
       "releaseAt": "2026-10-23T05:35:52.672Z",
@@ -68,12 +68,12 @@
       "approved": true,
       "status": "editorially-reviewed",
       "sourcesCheckedAt": "2026-10-08",
-      "reviewedSha256": "92f9f49c17a0776c455d844ee28ce271d19a03efe70b657e6019d7fea86242e7",
+      "reviewedSha256": "eed6626f02eeccaaf7a951348fe90846e13492ab4c83b2a10bea826b254d7950",
       "wordCount": 491,
       "editorialIntent": "Choose a recurring conversation based on both its premise and usable routine while separating visual customization.",
       "sources": [
         [
-          "GirlfriendGPT Official Website",
+          "Girlfriend GPT Official Website",
           "https://www.gptgirlfriend.online/"
         ],
         [
