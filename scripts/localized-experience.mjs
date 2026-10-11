@@ -25,7 +25,10 @@ export async function applyLocalizedExperience(out,config){
  const redirectFile=path.join(root,'_redirects');let redirects='';try{redirects=await readFile(redirectFile,'utf8')}catch{}
  redirects=redirects.split(/\r?\n/).filter(s=>!/^\/(?:ja|ko|zh-hant|es|pt-br|ru|de|fr|ar)\/(?:about|contact|editorial-policy|privacy|terms)(?:\/|\s)/.test(s)).join('\n').trim();
  for(const lang of languages)for(const page of info)redirects+=`\n/${lang}/${page} /${page}/ 301\n/${lang}/${page}/ /${page}/ 301\n/${lang}/${page}/index.html /${page}/ 301`;
- await writeFile(redirectFile,redirects.trim()+'\n');
+ const redirectLines=redirects.trim().split(/\r?\n/).filter(Boolean),dynamic=line=>/[:*]/.test(line.split(/\s+/)[0]);
+ // Pages requires static entries before dynamic patterns; otherwise later entries
+ // can be consumed by the lower dynamic-rule limit during upload.
+ await writeFile(redirectFile,[...redirectLines.filter(line=>!dynamic(line)),...redirectLines.filter(dynamic)].join('\n')+'\n');
  const choice=[...config.domain].reduce((n,c)=>n+c.charCodeAt(0),0)%3;
  const pageFiles=(await files(root)).filter(f=>f.endsWith(path.sep+'index.html'));
  const pageRoutes=new Set(pageFiles.map(f=>'/'+path.relative(root,f).replaceAll(path.sep,'/').replace(/index\.html$/,'')));

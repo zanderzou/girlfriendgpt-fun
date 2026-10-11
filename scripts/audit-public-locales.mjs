@@ -24,6 +24,7 @@ for(const name of names){const html=await readFile(path.join(out,name),'utf8'),r
  if(translated&&en==='/'){const hero=nodes.find(n=>n.attributes['data-locale-hero']!==undefined);assert.ok(hero,route+' hero');const calls=[];walkSync(hero,n=>{if(n.name==='a'&&/utm_ref=|ref=zanderzou/.test(n.attributes.href??''))calls.push(n)});assert.equal(calls.length,1,route+' primary CTA');}
 }
 const redirects=await readFile(path.join(out,'_redirects'),'utf8'),sitemap=await readFile(path.join(out,'sitemap-0.xml'),'utf8');
+let dynamicSeen=false;for(const line of redirects.split(/\r?\n/).filter(line=>line.trim()&&!line.startsWith('#'))){if(/[:*]/.test(line.split(/\s+/)[0]))dynamicSeen=true;else assert.ok(!dynamicSeen,'Static redirects must precede dynamic patterns');}
 for(const locale of languages){assert.equal([...routes].filter(p=>p.startsWith('/'+locale+'/')).length,7,locale+' home, blog index and five comparisons');for(const page of info){assert.ok(!routes.has(`/${locale}/${page}/`),'English-only generic page');assert.ok(redirects.includes(`/${locale}/${page}/ /${page}/ 301`),'Missing retired info redirect');assert.ok(!sitemap.includes(`/${locale}/${page}/`),'Generic translation in sitemap');}}
 assert.ok(!/^Disallow:\s*\/$/m.test(await readFile(path.join(out,'robots.txt'),'utf8')),'Crawl blocked');
 console.log(config.domain+': public locale audit passed; nine home/blog editions, English information pages, valid CTA and language links.');
