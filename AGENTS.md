@@ -5,3 +5,6 @@
 - All imagery must show clearly adult, non-explicit subjects. Licensed mainstream swimwear is acceptable with visible credit and no-endorsement disclosure; no nudity, transparent garments, pornographic acts, or youth-coded sexual framing.
 - SEO/GEO content is answer-led with original comparisons, visible authorship, review dates, primary sources, crawlable internal links, structured data, sitemap, RSS, and IndexNow.
 - Never add chat, login, payment, uploads, voice recording, or collection of private messages.
+
+- Multilingual scope (October 11, 2026): publish native language editions for the homepage and blog only. About, Contact, Editorial Policy, Privacy and Terms remain in English; retired translated information URLs redirect to their English counterparts.
+- Translated headings and CTA labels must fit desktop, tablet and mobile layouts. Keep one primary homepage CTA, preserve its configured destination, separate copy from portrait artwork, and check Arabic RTL and long German words.

@@ -1,0 +1,27 @@
+/* Native text needs room to grow. All rules are limited to language editions. */
+html[data-locale-edition] main :is(h1,h2,h3,p,li,a,td,th){overflow-wrap:break-word;word-break:normal}
+html[data-locale-edition] :is(h1,h2,h3){hyphens:none;text-wrap:balance}
+html[data-locale-edition] :is(p,li){hyphens:auto}
+html[data-locale-edition] :is(article,section,div,a){min-width:0}
+html[data-locale-edition] :is(.hero-actions,.lh-actions,.studio-actions,.candy-actions,.actions){flex-wrap:wrap}
+html[data-locale-edition] :is(.button,.btn,.cta,.official-link,.candy-official){white-space:normal;max-width:100%;text-align:center;line-height:1.35}
+html[data-locale-edition] [data-locale-hero] h1{font-size:clamp(2.5rem,4.25vw,4rem)!important;line-height:1.08!important;letter-spacing:-.035em!important}
+html[data-locale-edition] [data-hero-kind="portrait"]{display:grid!important;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)!important;align-items:center!important;gap:clamp(28px,4vw,64px);padding:150px max(24px,calc((100vw - 1280px)/2)) 64px!important;min-height:760px!important;isolation:isolate}
+html[data-locale-edition] [data-hero-kind="portrait"] [data-hero-copy]{position:relative!important;z-index:3;grid-column:1;grid-row:1;width:100%!important;max-width:100%!important;margin:0!important;padding:0!important}
+html[data-locale-edition] [data-hero-kind="portrait"] [data-hero-copy]>*{width:auto!important;max-width:100%!important;margin-inline:0!important}
+html[data-locale-edition] [data-hero-kind="portrait"] [data-hero-artwork]{position:relative!important;inset:auto!important;z-index:2!important;grid-column:2;grid-row:1;display:block;width:100%!important;height:clamp(460px,43vw,640px)!important;max-height:680px;object-fit:contain!important;object-position:center!important;border-radius:18px}
+html[data-locale-edition] [data-hero-kind="portrait"]:after{background:linear-gradient(0deg,var(--bg,#08070d),transparent 20%)!important;pointer-events:none}
+html[data-locale-edition] [data-hero-kind="portrait"] .hero-overlay{display:none}
+html[data-locale-edition] [data-hero-copy]>p{font-size:clamp(1rem,1.25vw,1.16rem);line-height:1.65}
+html[data-locale-edition] footer :is(a,p,li){overflow-wrap:anywhere;hyphens:auto;white-space:normal}
+html[data-locale-edition] .footer-legal{flex-wrap:wrap}
+html[data-locale-edition] .locale-comparisons>a{min-width:0}
+html[data-locale-edition] .localized-primary-action{margin:22px 0}
+html[data-locale-edition] .localized-primary-action>a{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:12px 24px;border-radius:10px;background:var(--accent,var(--pink,#c5adff));color:#100c18;font-size:15px;font-weight:800;text-decoration:none;box-shadow:0 9px 28px #0003}
+html[data-locale-edition] :is(.apk-home,.crush-home) .localized-primary-action>a{color:white}
+html[data-locale-edition][dir="rtl"] :is(h1,h2,h3){letter-spacing:normal!important}
+html[data-locale-edition]:lang(ja) main,html[data-locale-edition]:lang(zh-Hant) main{line-break:strict}
+html[data-locale-edition]:lang(ko) :is(h1,h2,h3,p){word-break:keep-all}
+html[data-locale-edition][dir="rtl"] main{text-align:start}
+@media(max-width:1100px){html[data-locale-edition] :is(.site-header,.localized-header){gap:12px}html[data-locale-edition] [data-hero-kind="portrait"]{gap:24px}}
+@media(max-width:760px){html[data-locale-edition] [data-hero-kind="portrait"]{grid-template-columns:minmax(0,1fr)!important;padding:100px 20px 44px!important;min-height:0!important;gap:26px}html[data-locale-edition] [data-hero-kind="portrait"] [data-hero-artwork]{grid-column:1;grid-row:1;height:clamp(300px,100vw,440px)!important;width:100%!important;max-height:440px}html[data-locale-edition] [data-hero-kind="portrait"] [data-hero-copy]{grid-column:1;grid-row:2}html[data-locale-edition] [data-locale-hero] h1{font-size:clamp(2.15rem,8.2vw,3.2rem)!important}html[data-locale-edition] :is(.hero-actions,.lh-actions)>.button{width:auto;min-height:48px;padding-inline:26px}html[data-locale-edition] .locale-comparisons{grid-template-columns:minmax(0,1fr)!important}html[data-locale-edition] :is(.lp-article,.article-shell,.candy-article){max-width:100%}}

@@ -34,7 +34,7 @@ for(const locale of localeList){
 }
 let text =[`# ${name}`,'',`> ${description}`,'',`Canonical publication: ${origin}/`,'','This is an independent editorial publication, not the official provider. Articles distinguish published provider information from suggested evaluation methods. Examples and proposed tests are not measured benchmark results. Check dated sources and live provider terms for changing features and prices.','',
  '## Main pages','',...links.map(([title,route,note])=>`- [${title}](${origin}${route}): ${note}`),'',
- '## Language editions','',...languages.map(([title,slug])=>`- [${title}](${origin}/${slug}/): Localized homepage, publication pages, and five comparison articles.`),'',
+ '## Language editions','',...languages.map(([title,slug])=>`- [${title}](${origin}/${slug}/): Localized homepage, blog and five comparison articles.`),'',
  '## Comparisons','',...articles.map(a=>`- [${label(a.title)}](${origin}/blog/${a.slug}/)`),'',
  '## Publication information','',...optional.map(([title,slug])=>`- [${title}](${origin}/${slug}/)`),'',
  '## Localized editions','',...localized,
@@ -47,6 +47,8 @@ function filterEnglishEditorialLinks(line) {
   return !match || !englishEditorialSet.has(match[1]);
 }
 text = text.split('\n').filter(filterEnglishEditorialLinks).join('\n');
+// Retired language information pages are represented by their English canonical pages.
+text=text.split('\n').filter(line=>!new RegExp('https://[^/]+/(?:ja|ko|zh-hant|es|pt-br|ru|de|fr|ar)/(?:about|contact|editorial-policy|privacy|terms)/').test(line)).join('\n');
 const destination=path.join(root,'public/llms.txt');
 if(process.argv.includes('--check')){
  if(!existsSync(destination)||readFileSync(destination,'utf8')!==text)throw Error('llms.txt is missing or stale; run npm run generate:llms');
