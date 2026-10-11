@@ -6,6 +6,7 @@ import assert from 'node:assert/strict';
 import {parse,walkSync} from 'ultrahtml';
 const languages=['ja','ko','zh-hant','es','pt-br','ru','de','fr','ar'];
 export const calls={
+ en:['Get Started','Explore Now','Take a Look'],
  ja:['今すぐ始める','さっそく試す','もっと見てみる'],ko:['지금 시작하기','바로 둘러보기','직접 살펴보기'],
  'zh-hant':['立即開始','開始探索','立即體驗'],es:['Empieza ahora','Descúbrelo','Pruébalo ahora'],
  'pt-br':['Comece agora','Explore agora','Experimente agora'],ru:['Начать сейчас','Попробовать','Узнать больше'],
@@ -48,9 +49,11 @@ export async function applyLocalizedExperience(out,config){
    edits.push({start:lead.loc[1].end,end:lead.loc[1].end,value:`<p class="localized-primary-action"><a href="${config.domain==='playboxai.fun'?'https://www.playbox.com/?ref=zanderzou':'https://spicy-box.com/?utm_ref=c546b6e92223b411'}" target="_blank" rel="sponsored nofollow noopener noreferrer">${escape(calls[lang][choice])} <span aria-hidden="true">↗</span></a></p>`});
   }
   for(const node of nodes){if(extra.has(node)){remove(node);continue}
-   if(translated&&promo(node)){
+   if(promo(node)){
+    // English mobile entrances must carry the same paid-link attributes.
+    if(!translated){const rels=new Set((node.attributes.rel??'').split(/\s+/).filter(Boolean));rels.add('sponsored');rels.add('nofollow');if(node.attributes.target==='_blank')rels.add('noopener');if([...rels].join(' ')!==(node.attributes.rel??''))updateOpen(node,{rel:[...rels].join(' ')});}
     // Preserve classes, destinations, icons and tracking attributes.
-    const text=calls[lang][choice];
+    const text=calls[translated?lang:'en'][choice];
     const icon=(node.children??[]).find(n=>n.name==='svg');
     const iconMarkup=icon?html.slice(icon.loc[0].start,icon.loc[1].end):' <span aria-hidden="true">↗</span>';
     edits.push({start:node.loc[0].end,end:node.loc[1].start,value:escape(text)+' '+iconMarkup});
