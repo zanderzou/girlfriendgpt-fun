@@ -1,11 +1,10 @@
-// Source-owned release checks for public home and blog editions.
+// Repair existing language editions without retiring published information pages.
 // Keep text and scripts byte-for-byte except for the specific elements below.
-import {readFile,writeFile,readdir,rm} from 'node:fs/promises';
+import {readFile,writeFile,readdir} from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {parse,walkSync} from 'ultrahtml';
 const languages=['ja','ko','zh-hant','es','pt-br','ru','de','fr','ar'];
-const info=['about','contact','editorial-policy','privacy','terms'];
 export const calls={
  ja:['今すぐ始める','さっそく試す','もっと見てみる'],ko:['지금 시작하기','바로 둘러보기','직접 살펴보기'],
  'zh-hant':['立即開始','開始探索','立即體驗'],es:['Empieza ahora','Descúbrelo','Pruébalo ahora'],
@@ -21,10 +20,8 @@ async function files(dir){let a=[];for(const e of await readdir(dir,{withFileTyp
 export async function applyLocalizedExperience(out,config){
  assert.notEqual(config.domain,'spicybox.fun');
  const root=path.resolve(out);
- for(const lang of languages)for(const page of info){const dir=path.resolve(root,lang,page);assert.ok(dir.startsWith(root+path.sep));await rm(dir,{recursive:true,force:true});}
  const redirectFile=path.join(root,'_redirects');let redirects='';try{redirects=await readFile(redirectFile,'utf8')}catch{}
  redirects=redirects.split(/\r?\n/).filter(s=>!/^\/(?:ja|ko|zh-hant|es|pt-br|ru|de|fr|ar)\/(?:about|contact|editorial-policy|privacy|terms)(?:\/|\s)/.test(s)).join('\n').trim();
- for(const lang of languages)for(const page of info)redirects+=`\n/${lang}/${page} /${page}/ 301\n/${lang}/${page}/ /${page}/ 301\n/${lang}/${page}/index.html /${page}/ 301`;
  const redirectLines=redirects.trim().split(/\r?\n/).filter(Boolean),dynamic=line=>/[:*]/.test(line.split(/\s+/)[0]);
  // Pages requires static entries before dynamic patterns; otherwise later entries
  // can be consumed by the lower dynamic-rule limit during upload.
@@ -60,9 +57,7 @@ export async function applyLocalizedExperience(out,config){
    }
    for(const name of ['href','value']){const value=node.attributes[name];if(!value)continue;
     let u;try{u=new URL(value,'https://'+config.domain)}catch{continue}if(u.hostname!==config.domain)continue;
-    const m=u.pathname.match(/^\/(ja|ko|zh-hant|es|pt-br|ru|de|fr|ar)\/(about|contact|editorial-policy|privacy|terms)(?:\/index\.html|\/)?$/);
-    if(m){const isLanguage=node.name==='option'||node.attributes.lang||ancestors(node).some(n=>/language|locale-switch/.test(cls(n))||n.attributes?.['data-release-language-menu']!==undefined);const next=isLanguage?`/${m[1]}/`:`/${m[2]}/`;updateOpen(node,{[name]:next+u.search+u.hash});}
-    else if(/^\/(?:ja|ko|zh-hant|es|pt-br|ru|de|fr|ar)\//.test(u.pathname)&&!pageRoutes.has(u.pathname)&&(node.name==='option'||node.attributes.lang||ancestors(node).some(n=>/language|locale-switch/.test(cls(n))))){const code=u.pathname.split('/')[1];updateOpen(node,{[name]:`/${code}/${u.pathname.includes('/blog/')?'blog/':''}`});}
+    if(/^\/(?:ja|ko|zh-hant|es|pt-br|ru|de|fr|ar)\//.test(u.pathname)&&!pageRoutes.has(u.pathname)&&(node.name==='option'||node.attributes.lang||ancestors(node).some(n=>/language|locale-switch/.test(cls(n))))){const code=u.pathname.split('/')[1];updateOpen(node,{[name]:`/${code}/${u.pathname.includes('/blog/')?'blog/':''}`});}
    }
    if(translated&&/promotion-disclosure/.test(cls(node))&&hero&&ancestors(node).includes(hero))remove(node);
   }

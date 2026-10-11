@@ -20,7 +20,7 @@ async function files(dir){const rows=[];for(const e of await readdir(dir,{withFi
 await applyLocalizedExperience(out,config);
 const pages=(await files(out)).filter(f=>f.endsWith(path.sep+'index.html')&&!path.relative(out,f).startsWith('404'));
 const routeFor=file=>'/'+path.relative(out,file).replaceAll(path.sep,'/').replace(/index\.html$/,'');
-const paths=new Set(pages.map(routeFor));assert.equal(paths.size,75+[...paths].filter(p=>englishEditorialPaths.has(p)).length,'Preserve the complete editions and add only English articles');
+const paths=new Set(pages.map(routeFor));assert.equal(paths.size,120+[...paths].filter(p=>englishEditorialPaths.has(p)).length,'Preserve the complete editions and add only English articles');
 const nativeLanguage={en:'Language',ja:'言語',ko:'언어','zh-hant':'語言',es:'Idioma','pt-br':'Idioma',ru:'Язык',de:'Sprache',fr:'Langue',ar:'اللغة'};
 const prefix=/^\/(?:ja|ko|zh-hant|es|pt-br|ru|de|fr|ar)(?=\/)/;
 const robots='index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1';
@@ -54,4 +54,4 @@ const xml='<?xml version="1.0" encoding="UTF-8"?><urlset '+ns+'>'+[...paths].sor
 await writeFile(path.join(out,'sitemap-0.xml'),xml);
 await writeFile(path.join(out,'sitemap-index.xml'),`<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>${origin}/sitemap-0.xml</loc></sitemap></sitemapindex>\n`);
 assert.ok(!/^Disallow:\s*\/$/m.test(await readFile(path.join(out,'robots.txt'),'utf8')),'Production crawl blocked');
-console.log(`${config.domain}: finalized home and blog editions, reciprocal hreflang and full sitemap; English content retained.`);
+console.log(`${config.domain}: finalized all existing language editions, reciprocal hreflang and full sitemap; English content retained.`);
