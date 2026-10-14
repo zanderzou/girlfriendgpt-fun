@@ -126,4 +126,6 @@ body:before{background:radial-gradient(circle at 78% 18%,rgba(117,72,244,.16),tr
   .hero-trust{order:5}
   .hero h1{margin-block:12px 13px}
   .hero-subhead,.locale-hero-subhead{margin:0 0 8px}
+  .locale-hero .hero-actions{margin-top:12px}
+  html:is([lang="es"],[lang="pt-br"]) .locale-hero .kicker{font-size:10px;letter-spacing:.1em;line-height:1.3}
 }
