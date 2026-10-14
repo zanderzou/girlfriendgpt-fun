@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 interface Props{title:string;description:string;kicker:string}const{title,description,kicker}=Astro.props;
+const seoTitle = title === "About Girlfriend GPT Guide" ? "About | Girlfriend GPT" : `${title} | Girlfriend GPT`;
 ---
-<BaseLayout title={`${title} | Girlfriend GPT Guide`} description={description}><section class="info-hero"><div class="ambient-orb"></div><span>{kicker}</span><h1>{title}</h1><p>{description}</p><small>Last reviewed: September 21, 2026</small></section><article class="info-content"><slot/></article></BaseLayout>
+<BaseLayout title={seoTitle} description={description}><section class="info-hero"><div class="ambient-orb"></div><span>{kicker}</span><h1>{title}</h1><p>{description}</p><small>Last reviewed: September 21, 2026</small></section><article class="info-content"><slot/></article></BaseLayout>
