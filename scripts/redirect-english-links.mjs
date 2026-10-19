@@ -26,6 +26,8 @@ export default function redirectEnglishLinks() {
             if (LOCALES.has(firstSegment)) continue;
 
             const original = await readFile(path, "utf8");
+            // Preserve citations on the two reviewed utility articles; existing pages keep their original link handling.
+            if (/<body\b[^>]*class=["'][^"']*\butility-document\b/i.test(original)) continue;
             const updated = original.replace(/<a\b[^>]*>/gi, (tag) => tag.replace(/\bhref\s*=\s*(["'])(.*?)\1/i, (attribute, quote, href) => {
               if (!/^https?:\/\//i.test(href) && !href.startsWith("//")) return attribute;
               try {

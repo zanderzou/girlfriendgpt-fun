@@ -18,7 +18,9 @@
     "test:llms": "node scripts/generate-llms.mjs --check",
     "prebuild": "npm run generate:llms",
     "build:static": "node scripts/run-astro.mjs build --config astro.editorial.config.mjs && node scripts/prepare-sites-build.mjs && node scripts/finalize-localized-release.mjs",
-    "test:i18n-release": "node scripts/audit-public-locales.mjs"
+    "test:i18n-release": "node scripts/audit-public-locales.mjs",
+    "postbuild": "node scripts/audit-editorial-build.mjs",
+    "deploy:check": "node scripts/audit-editorial-build.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

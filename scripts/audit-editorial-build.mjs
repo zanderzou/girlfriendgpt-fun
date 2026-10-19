@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import path from 'node:path';
+const root=path.resolve(import.meta.dirname,'..');
+const s=JSON.parse(await readFile(path.join(root,'src/data/editorialSchedule.json'),'utf8'));
+const origin=new URL('https://'+s.domain).origin;
+const report=JSON.parse(await readFile(path.join(root,'artifacts/editorial-build.json'),'utf8'));
+const code=await readFile(path.join(root,report.out,'_worker.js'),'utf8');
+const worker=(await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'))).default;
+const realNow=Date.now;let now=realNow();Date.now=()=>now;
+const fakeAssets={async fetch(request){const p=decodeURIComponent(new URL(request.url).pathname);try{const file=path.join(root,report.out,p.endsWith('/')?p+'index.html':p);return new Response(request.method==='HEAD'?null:await readFile(file),{headers:{'X-Test-Baseline':'preserved'}})}catch{return new Response(request.method==='HEAD'?null:'Not found',{status:404,headers:{'X-Test-Baseline':'preserved'}})}}};
+let checks=0;
+async function request(p,method='GET',country='US',host=s.domain){const r=new Request('https://'+host+p,{method});Object.defineProperty(r,'cf',{value:{country}});return worker.fetch(r,{ASSETS:fakeAssets},{})}
+try{for(const item of s.articles.filter(a=>a.approved&&a.order>(s.baselinePhase??1))){
+ const p=(s.articlePrefix??'/blog/')+item.slug+'/';
+ for(const suffix of ['', '?check=1','index.html']){now=Date.parse(item.releaseAt)-1;const r=await request(p+suffix);assert.equal(r.status,404,p+' leaked before release');assert.match(r.headers.get('Cache-Control')??'',/no-store/);assert.match(r.headers.get('X-Robots-Tag')??'',/noindex/);checks++}
+ now=Date.parse(item.releaseAt)-1;for(const alias of [p.slice(0,-1),p.replace(item.slug,item.slug.replace('-','%2D'))]){const r=await request(alias,'HEAD');assert.equal(r.status,404);assert.equal(await r.text(),'');checks++}
+ now=Date.parse(item.releaseAt);for(const method of ['GET','HEAD']){const r=await request(p,method);assert.equal(r.status,200,p+' missing after release');assert.equal(r.headers.get('Cache-Control'),'no-store');if(method==='GET'){const html=await r.text();assert.match(html,/<html[^>]+lang="en"/);assert.ok(html.includes(item.title.replaceAll('&','&amp;'))||html.includes(item.title),p+' title mismatch');assert.ok(html.includes(origin+p),p+' canonical missing')}else assert.equal(await r.text(),'');checks++}
+ for(const listing of [s.articlePrefix??'/blog/',s.articlePrefix?.startsWith('/en/')?'/en/rss.xml':'/rss.xml',s.requiresGeography?'/sitemap.xml':'/sitemap-0.xml','/llms.txt']){
+  now=Date.parse(item.releaseAt)-1;let r=await request(listing);assert.equal(r.status,200,listing+' inaccessible');assert.ok(!(await r.text()).includes(p),listing+' contains unreleased URL '+p);checks++;
+  now=Date.parse(item.releaseAt);r=await request(listing);assert.equal(r.status,200);assert.ok((await r.text()).includes(p),listing+' omits released URL '+p);checks++;
+ }
+ if(s.requiresGeography){for(const country of ['CN','XX']){const r=await request(p,'GET',country);assert.ok([403,503].includes(r.status),'Geographic guard bypass');checks++}}
+ }
+ console.log(s.domain+': '+checks+' editorial boundary checks passed');
+}finally{Date.now=realNow}

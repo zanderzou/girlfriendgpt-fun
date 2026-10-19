@@ -1,7 +1,7 @@
 {
   "domain": "girlfriendgpt.fun",
   "timeZone": "Asia/Shanghai",
-  "policy": "New articles are English-only. Quality review is required before a date can enable a release. Existing publications are preserved.",
+  "policy": "Only reviewed English guides are added. Existing releases and translations are preserved. Server time controls availability.",
   "articles": [
     {
       "order": 1,
@@ -85,6 +85,65 @@
           "https://help.replika.com/hc/en-us/articles/115001095892-How-do-I-begin-Replika"
         ]
       ]
+    },
+    {
+      "order": 4,
+      "slug": "girlfriendgpt-ccbill-refund-cancel-different-requests",
+      "title": "GirlfriendGPT and CCBill: Cancellation Is a Different Request From a Refund",
+      "readerQuestion": "Send the right request to the relevant billing party without mistaking a refund inquiry for confirmed cancellation.",
+      "releaseAt": "2026-10-30T22:15:31.672Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-10-19",
+      "reviewedSha256": "6f8a02f9ddecf60054974e1bc806f448749ddda3c2c074688080ce1e1afb93d8",
+      "wordCount": 433,
+      "editorialIntent": "A processor-specific route map and two-outcome receipt checklist based on the actual published terms.",
+      "sources": [
+        [
+          "GirlfriendGPT: Terms of Use, June 18 2026",
+          "https://www.gptgirlfriend.online/legal/terms"
+        ],
+        [
+          "CCBill: consumer subscription support",
+          "https://support.ccbill.com/"
+        ],
+        [
+          "GirlfriendGPT: official support route",
+          "https://www.gptgirlfriend.online/support"
+        ]
+      ]
+    },
+    {
+      "order": 5,
+      "slug": "girlfriendgpt-account-deletion-six-year-retention",
+      "title": "GirlfriendGPT Account Deletion: Read the Retention Clause Too",
+      "readerQuestion": "Understand the difference between losing account access and the policy’s post-closure handling of personal information.",
+      "releaseAt": "2026-11-06T23:34:34.672Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-10-19",
+      "reviewedSha256": "1b491b43f1c9082bfddd2bf5cf4395110cbc8acb4567b17ad7e9a19651013eb2",
+      "wordCount": 432,
+      "editorialIntent": "A three-state record map and a precise retained-category question rather than an unsupported immediate-erasure claim.",
+      "sources": [
+        [
+          "GirlfriendGPT: Privacy Notice, April 13 2026",
+          "https://www.gptgirlfriend.online/legal/privacy"
+        ],
+        [
+          "GirlfriendGPT: Terms of Use, June 18 2026",
+          "https://www.gptgirlfriend.online/legal/terms"
+        ],
+        [
+          "GirlfriendGPT: official support route",
+          "https://www.gptgirlfriend.online/support"
+        ]
+      ]
     }
-  ]
+  ],
+  "baselinePhase": 1,
+  "articlePrefix": "/blog/",
+  "contentDirectory": "src/content/blog"
 }
