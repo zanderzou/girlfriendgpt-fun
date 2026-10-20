@@ -49,6 +49,7 @@ export async function applyLocalizedExperience(out,config){
    edits.push({start:lead.loc[1].end,end:lead.loc[1].end,value:`<p class="localized-primary-action"><a href="${config.domain==='playboxai.fun'?'https://www.gptgirlfriend.online/?ref=oty3mmu':'https://www.gptgirlfriend.online/?ref=oty3mmu'}" target="_blank" rel="sponsored nofollow noopener noreferrer">${escape(calls[lang][choice])} <span aria-hidden="true">↗</span></a></p>`});
   }
   for(const node of nodes){if(extra.has(node)){remove(node);continue}
+   if(node.name==='a'&&node.attributes.href==='https://www.gptgirlfriend.online/?ref=oty3mmu'&&!/\bsponsored\b/.test(node.attributes.rel??'')&&ancestors(node).some(n=>n.name==='footer'))continue;
    if(promo(node)){
     // English mobile entrances must carry the same paid-link attributes.
     if(!translated){const rels=new Set((node.attributes.rel??'').split(/\s+/).filter(Boolean));rels.add('sponsored');rels.add('nofollow');if(node.attributes.target==='_blank')rels.add('noopener');if([...rels].join(' ')!==(node.attributes.rel??''))updateOpen(node,{rel:[...rels].join(' ')});}
