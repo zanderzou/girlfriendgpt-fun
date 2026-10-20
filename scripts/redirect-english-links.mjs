@@ -2,7 +2,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import { join, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const TARGET = "https://www.playbox.com/?ref=zanderzou";
+const TARGET = "https://www.gptgirlfriend.online/?ref=oty3mmu";
 const LOCALES = new Set(["ja", "ko", "zh-hant", "es", "pt-br", "ru", "de", "fr", "ar"]);
 
 export default function redirectEnglishLinks() {
