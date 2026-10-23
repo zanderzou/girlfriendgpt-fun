@@ -15,7 +15,7 @@ export const calls={
 const ancestors=n=>{const a=[];while(n?.parent){n=n.parent;a.push(n)}return a};
 const cls=n=>n.attributes?.class??'';
 const descendants=n=>{const a=[];walkSync(n,x=>{if(x.type===1)a.push(x)});return a};
-const promo=n=>n.name==='a'&&/^https:\/\/(?:www\.playbox\.com\/\?ref=zanderzou|spicy-box\.com\/\?utm_ref=c546b6e92223b411|www\.gptgirlfriend\.online\/\?ref=oty3mmu)$/.test(n.attributes.href??'');
+const promo=n=>n.name==='a'&&/^https:\/\/(?:spicy-box\.com\/\?utm_ref=6cc1a8f534d264bd|spicy-box\.com\/\?utm_ref=6cc1a8f534d264bd|spicy-box\.com\/\?utm_ref=6cc1a8f534d264bd)$/.test(n.attributes.href??'');
 const escape=s=>s.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
 async function files(dir){let a=[];for(const e of await readdir(dir,{withFileTypes:true})){if(e.isDirectory())a.push(...await files(path.join(dir,e.name)));else a.push(path.join(dir,e.name))}return a}
 export async function applyLocalizedExperience(out,config){
@@ -46,10 +46,10 @@ export async function applyLocalizedExperience(out,config){
   const heroPromos=hero?descendants(hero).filter(promo):[];
   const extra=new Set(heroPromos.slice(1));
   if(hero&&!heroPromos.length){const heading=descendants(hero).find(n=>n.name==='h1'),lead=heading.parent.children.find(n=>n.name==='p')??heading;
-   edits.push({start:lead.loc[1].end,end:lead.loc[1].end,value:`<p class="localized-primary-action"><a href="${config.domain==='playboxai.fun'?'https://www.gptgirlfriend.online/?ref=oty3mmu':'https://www.gptgirlfriend.online/?ref=oty3mmu'}" target="_blank" rel="sponsored nofollow noopener noreferrer">${escape(calls[lang][choice])} <span aria-hidden="true">↗</span></a></p>`});
+   edits.push({start:lead.loc[1].end,end:lead.loc[1].end,value:`<p class="localized-primary-action"><a href="${config.domain==='playboxai.fun'?'https://spicy-box.com/?utm_ref=6cc1a8f534d264bd':'https://spicy-box.com/?utm_ref=6cc1a8f534d264bd'}" target="_blank" rel="sponsored nofollow noopener noreferrer">${escape(calls[lang][choice])} <span aria-hidden="true">↗</span></a></p>`});
   }
   for(const node of nodes){if(extra.has(node)){remove(node);continue}
-   if(node.name==='a'&&node.attributes.href==='https://www.gptgirlfriend.online/?ref=oty3mmu'&&!/\bsponsored\b/.test(node.attributes.rel??'')&&ancestors(node).some(n=>n.name==='footer'))continue;
+   if(node.name==='a'&&node.attributes.href==='https://spicy-box.com/?utm_ref=6cc1a8f534d264bd'&&!/\bsponsored\b/.test(node.attributes.rel??'')&&ancestors(node).some(n=>n.name==='footer'))continue;
    if(promo(node)){
     // English mobile entrances must carry the same paid-link attributes.
     if(!translated){const rels=new Set((node.attributes.rel??'').split(/\s+/).filter(Boolean));rels.add('sponsored');rels.add('nofollow');if(node.attributes.target==='_blank')rels.add('noopener');if([...rels].join(' ')!==(node.attributes.rel??''))updateOpen(node,{rel:[...rels].join(' ')});}
