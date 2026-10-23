@@ -1,12 +1,14 @@
-export function selectRelease(schedule, now) {
-  return schedule.filter(s => s.approved && Date.parse(s.releaseAt) <= now).sort((a,b) => a.order-b.order).at(-1)?.order ?? 0;
-}
+import {selectGatePhase} from './prepublication-gate.mjs';
+export function selectRelease(schedule, now, gate) { return selectGatePhase(schedule, gate, now); }
 
-export function makeEditorialWorker({schedule, versions, originalWorker='', securityHeaders={}, articlePrefix='/blog/'}) {
+export function makeEditorialWorker({schedule, versions, originalWorker='', securityHeaders={}, articlePrefix='/blog/', gate}) {
+  if (!gate || gate.version !== 1) throw Error('Mandatory prepublication gate missing');
   if (originalWorker && !/export\s+default\s+/.test(originalWorker)) throw Error('Unsupported baseline worker export');
   const baseline=originalWorker ? originalWorker.replace(/export\s+default\s+/, 'const baselineWorker = ') : 'const baselineWorker = {fetch(request,env){return env.ASSETS.fetch(request)}};';
   return `${baseline}
 const releaseSchedule=${JSON.stringify(schedule)};
+const releaseGate=${JSON.stringify(gate)};
+${selectGatePhase.toString()}
 const releaseVersions=${JSON.stringify(versions)};
 const releaseHeaders=${JSON.stringify(securityHeaders)};
 const articlePrefix=${JSON.stringify(articlePrefix)};
@@ -26,9 +28,9 @@ export default {async fetch(request,env,ctx){
  if(!['GET','HEAD'].includes(request.method)||[401,403,410,429,451,503].includes(base.status))return base;
  const url=new URL(request.url), p=releasePath(url.pathname);
  if(p===null)return releaseMissing(request);
- const now=Date.now(),phase=releaseSchedule.filter(s=>s.approved&&Date.parse(s.releaseAt)<=now).sort((a,b)=>a.order-b.order).at(-1)?.order??0;
+ const now=Date.now(),phase=selectGatePhase(releaseSchedule,releaseGate,now);
  const item=releaseSchedule.find(s=>articlePrefix+s.slug+'/'===p);
- if(item&&(!item.approved||Date.parse(item.releaseAt)>now))return releaseMissing(request);
+ if(item&&(!item.approved||item.order>phase||Date.parse(item.releaseAt)>now))return releaseMissing(request);
  // Keep baseline host canonicalization; static directory aliases may be served directly.
  if(base.status>=300&&base.status<400){const to=base.headers.get('Location');if(to&&new URL(to,url).hostname!==url.hostname)return base;}
  const entry=releaseVersions[String(phase)]?.[p];

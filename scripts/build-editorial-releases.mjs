@@ -1,3 +1,4 @@
+import {compilePrepublicationGate} from './prepublication-gate.mjs';
 import assert from 'node:assert/strict';
 import {readFile,writeFile,readdir,mkdir,copyFile,unlink,access} from 'node:fs/promises';
 import path from 'node:path';
@@ -17,6 +18,9 @@ const runScript=(name,phase)=>new Promise((resolve,reject)=>{const win=process.p
 const types={'.html':'text/html; charset=utf-8','.xml':'application/xml; charset=utf-8','.txt':'text/plain; charset=utf-8','.json':'application/json; charset=utf-8'};
 const routeFor=f=>f==='index.html'?'/':f.endsWith('/index.html')?'/'+f.slice(0,-10):'/'+f;
 const approved=schedule.articles.filter(a=>a.approved).sort((a,b)=>a.order-b.order);
+const gateConfig=JSON.parse(await readFile(path.join(root,'src/data/prepublicationGate.json'),'utf8'));
+const contentHashes={};for(const a of schedule.articles)contentHashes[a.slug]=hash(await readFile(path.join(drafts,a.slug+'.md')));
+const gate=compilePrepublicationGate(schedule,gateConfig,contentHashes,Date.now(),{evidenceBase:root,evidenceRoot:path.join(root,'private-editorial-evidence')});
 assert.deepEqual(approved.map(a=>a.order),approved.map((_,i)=>i+1),'Approvals must be sequential');
 assert.ok(approved.length>baselinePhase,'At least one future release is required');
 for(const [i,a]of approved.entries()){
@@ -42,7 +46,7 @@ async function snapshot(phase){await setPhase(phase);await rawBuild(phase);const
 let succeeded=false;
 try{await snapshot(baselinePhase);for(const a of approved.filter(a=>a.order>baselinePhase))await snapshot(a.order);succeeded=true}
 finally{try{for(const a of schedule.articles){const f=path.join(content,a.slug+'.md');if(original.has(a.slug))await writeFile(f,original.get(a.slug));else if(await exists(f))await unlink(f)}if(succeeded)await rawBuild(baselinePhase)}finally{for(const [f,bytes]of nativeSources)await writeFile(f,bytes)}}
-const worker=makeEditorialWorker({schedule:schedule.articles,versions,originalWorker:baseWorker,securityHeaders,articlePrefix:schedule.articlePrefix??'/blog/'});
+const worker=makeEditorialWorker({schedule:schedule.articles,versions,originalWorker:baseWorker,securityHeaders,articlePrefix:schedule.articlePrefix??'/blog/',gate});
 assert.ok(Buffer.byteLength(worker)<2_500_000,'Worker exceeds conservative size limit');
 await writeFile(path.join(out,'_worker.js'),worker);
 const includes=[...new Set([...baseRoutes.include,schedule.articlePrefix?.slice(0,-1)??'/blog',(schedule.articlePrefix??'/blog/')+'*',...Object.values(versions).flatMap(v=>Object.keys(v))])];
@@ -51,5 +55,5 @@ const routes={version:1,include:compact,exclude:baseRoutes.exclude.filter(p=>p!=
 assert.ok(routes.include.length+routes.exclude.length<=100,'Too many worker routes');
 await writeFile(path.join(out,'_routes.json'),JSON.stringify(routes,null,2)+'\n');
 await mkdir(path.join(root,'artifacts'),{recursive:true});
-await writeFile(path.join(root,'artifacts/editorial-build.json'),JSON.stringify({builtAt:new Date().toISOString(),domain:schedule.domain,out:path.relative(root,out),baselinePhase,scheduled:approved.length-baselinePhase,snapshots,workerBytes:Buffer.byteLength(worker)},null,2)+'\n');
+await writeFile(path.join(root,'artifacts/editorial-build.json'),JSON.stringify({builtAt:new Date().toISOString(),domain:schedule.domain,out:path.relative(root,out),baselinePhase,scheduled:approved.length-baselinePhase,prepublicationGate:{grandfathered:gate.grandfathered.length,cleared:gate.clearances.length,pending:gate.pending},snapshots,workerBytes:Buffer.byteLength(worker)},null,2)+'\n');
 console.log(schedule.domain+': '+approved.length+' reviewed releases; source restored to phase '+baselinePhase);

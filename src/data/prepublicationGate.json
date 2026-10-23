@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "domain": "girlfriendgpt.fun",
+  "grandfathered": [
+    {
+      "order": 1,
+      "slug": "girlfriendgpt-vs-nomi-many-or-one",
+      "releaseAt": "2026-10-08T05:17:20.878Z",
+      "status": 200,
+      "liveVerifiedAt": "2026-10-23T05:17:35.238Z",
+      "canonical": "https://girlfriendgpt.fun/blog/girlfriendgpt-vs-nomi-many-or-one/",
+      "language": "en",
+      "titleMatches": true,
+      "discoveryVerified": true,
+      "sourceCommit": "982d8c4e188f82947b76e012e42bf0045fe3eddb",
+      "deploymentId": "1b7efbb9-846e-4343-adf5-54cba72a482b",
+      "responseSha256": "52640f7f61572a835e00adf85bdee909b26c026dd45af7243fd520caa018663a"
+    },
+    {
+      "order": 2,
+      "slug": "girlfriendgpt-vs-kindroid-lore-steering",
+      "releaseAt": "2026-10-15T16:25:28.683Z",
+      "status": 200,
+      "liveVerifiedAt": "2026-10-23T05:17:35.239Z",
+      "canonical": "https://girlfriendgpt.fun/blog/girlfriendgpt-vs-kindroid-lore-steering/",
+      "language": "en",
+      "titleMatches": true,
+      "discoveryVerified": true,
+      "sourceCommit": "982d8c4e188f82947b76e012e42bf0045fe3eddb",
+      "deploymentId": "1b7efbb9-846e-4343-adf5-54cba72a482b",
+      "responseSha256": "8057dd1a3e30a710ea5a64de0f570253914a197350a68305512550454fe7e9c0"
+    }
+  ],
+  "certificates": {}
+}
