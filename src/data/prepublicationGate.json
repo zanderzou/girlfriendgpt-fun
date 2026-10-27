@@ -31,5 +31,71 @@
       "responseSha256": "8057dd1a3e30a710ea5a64de0f570253914a197350a68305512550454fe7e9c0"
     }
   ],
-  "certificates": {}
+  "certificates": {
+    "girlfriendgpt-vs-replika-avatar-routine": {
+      "schemaVersion": 1,
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "domain": "girlfriendgpt.fun",
+      "slug": "girlfriendgpt-vs-replika-avatar-routine",
+      "order": 3,
+      "releaseAt": "2026-10-23T05:35:52.672Z",
+      "activationAt": "2026-10-27T04:37:10.772Z",
+      "reviewedAt": "2026-10-27T04:37:10.772Z",
+      "factsCheckedAt": "2026-10-27T04:37:10.772Z",
+      "reviewedBy": "Codex editorial review following the October27 human project override",
+      "contentSha256": "d51ce75ae51191dd801d47b883be3f24e750fcceb83bb1eec76ceae6ccb609ee",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Reviewed original final article and primary source scope; correct material outdated claims, preserve honest limits, no fabricated product experience."
+      },
+      "observations": [],
+      "officialSources": [
+        {
+          "url": "https://www.gptgirlfriend.online/",
+          "checkedAt": "2026-10-27T04:28:38.068Z",
+          "status": 200,
+          "claim": "Relevant current published feature/policy wording reviewed; no account behavior or product testing implied.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261027/source-d8ed1883d48622b9.json",
+              "sha256": "ed3f2c3049cfdec4dc92557fef883233f16da290402887cc4398ee25bae95867"
+            }
+          ]
+        },
+        {
+          "url": "https://help.replika.com/hc/en-us/articles/360046050652-How-do-I-change-my-Replika-s-avatar",
+          "checkedAt": "2026-10-27T04:37:10.772Z",
+          "status": "content-retrieved",
+          "claim": "Relevant current published feature/policy wording reviewed; no account behavior or product testing implied.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261027/source-8c361a5c4ca31960.json",
+              "sha256": "b2c8fd63e97ee735a83358da625ef88edacc94f7ea9f22652a52e2cc2615d53b"
+            }
+          ]
+        },
+        {
+          "url": "https://help.replika.com/hc/en-us/articles/115001095892-How-do-I-begin-Replika",
+          "checkedAt": "2026-10-27T04:37:10.772Z",
+          "status": "content-retrieved",
+          "claim": "Relevant current published feature/policy wording reviewed; no account behavior or product testing implied.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261027/source-164e6e2a03d7a4cd.json",
+              "sha256": "f16779fc58bb105401513f85f5b4faa0fcbc5ad3e2cd0c9833e0e8a52ce6ea13"
+            }
+          ]
+        }
+      ],
+      "certificateDigest": "b8033d29077b917ba0c0df788606921e8a98a8accfb71533e754ec1273e1153a"
+    }
+  }
 }

@@ -1,8 +1,8 @@
 ---
 title: "Girlfriend GPT vs Replika: Character or Avatar Routine"
 description: "Compare Girlfriend GPT character selection with a Replika avatar routine, checking conversation fit separately from appearance and optional purchases."
-publishDate: 2026-10-23T05:35:52.672Z
-updatedDate: 2026-10-08T05:17:20.878Z
+publishDate: "2026-10-27"
+updatedDate: "2026-10-27"
 category: "Comparison"
 readTime: "3 min read"
 answer: "Evaluate Girlfriend GPT when a particular fictional character premise drives the session. Evaluate a Replika avatar routine when returning to a configured companion is central. Both can involve visual choices, so assess appearance, dialogue and current account access separately instead of treating an attractive avatar as evidence of conversational fit."
@@ -19,7 +19,7 @@ sources:
 
 Girlfriend GPT vs Replika can look like a visual choice because both present a character before the conversation begins. A card image or an avatar is part of the experience, but it does not tell you whether the dialogue premise and return routine fit what you want to do.
 
-Official public information was reviewed on October 8, 2026. This guide proposes a short fictional conversation exercise and does not report account tests, emotional outcomes or an appearance-quality ranking.
+Official public information was reviewed on October 27, 2026. This guide proposes a short fictional conversation exercise and does not report account tests, emotional outcomes or an appearance-quality ranking.
 
 ## Define the recurring task
 

@@ -1,0 +1,21 @@
+{
+  "domain": "girlfriendgpt.fun",
+  "slug": "girlfriendgpt-vs-replika-avatar-routine",
+  "reviewedAt": "2026-10-27T04:37:10.772Z",
+  "standard": "portfolio-basic-quality-20261027",
+  "materialRevision": false,
+  "sources": [
+    "https://www.gptgirlfriend.online/",
+    "https://help.replika.com/hc/en-us/articles/360046050652-How-do-I-change-my-Replika-s-avatar",
+    "https://help.replika.com/hc/en-us/articles/115001095892-How-do-I-begin-Replika"
+  ],
+  "quality": {
+    "readable": true,
+    "useful": true,
+    "factual": true,
+    "experienceClaims": "none",
+    "note": "Reviewed original final article and primary source scope; correct material outdated claims, preserve honest limits, no fabricated product experience."
+  },
+  "contentSha256": "d51ce75ae51191dd801d47b883be3f24e750fcceb83bb1eec76ceae6ccb609ee",
+  "limits": "Informational guide and suggested fictional exercises; no product-account, transaction, backend or generation test claimed."
+}
