@@ -1,7 +1,7 @@
 ---
 title: "GirlfriendGPT and CCBill: Cancellation Is a Different Request From a Refund"
 description: "Match a GirlfriendGPT transaction to its payment provider, distinguish stopping renewal from returning a past charge, and keep each request’s outcome separate."
-publishDate: "2026-10-30"
+publishDate: "2026-11-03"
 updatedDate: "2026-10-19"
 category: "Practical guide"
 readTime: "3 min read"

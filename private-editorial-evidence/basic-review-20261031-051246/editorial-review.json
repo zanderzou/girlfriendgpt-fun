@@ -1,0 +1,82 @@
+{
+  "domain": "girlfriendgpt.fun",
+  "slug": "girlfriendgpt-ccbill-refund-cancel-different-requests",
+  "reviewedAt": "2026-10-31T05:19:05.794Z",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "skill": {
+    "name": "write-tested-seo",
+    "version": "1.5",
+    "projectOverride": "October27 basic useful truthful sourced guide"
+  },
+  "sourceCommit": "ba697213929a41fb5ebf6f35d78e514d5be6e654",
+  "production": {
+    "id": "5ce2afd8-2c3a-47c7-8ef5-947d410894ea",
+    "url": "https://5ce2afd8.girlfriendgpt-fun.pages.dev",
+    "commit": "ba697213929a41fb5ebf6f35d78e514d5be6e654",
+    "sourceShaRaw": "ba697213929a41fb5ebf6f35d78e514d5be6e654",
+    "createdAt": "2026-10-29T13:21:03.202945Z"
+  },
+  "contentSha256": "6f8a02f9ddecf60054974e1bc806f448749ddda3c2c074688080ce1e1afb93d8",
+  "terminalLfPreserved": true,
+  "sources": [
+    {
+      "url": "https://www.gptgirlfriend.online/legal/terms",
+      "checkedAt": "2026-10-31T05:19:05.794Z",
+      "status": "content-retrieved",
+      "retrieval": "Actual official source searched/opened/read this heartbeat; direct HTTP recorded separately.",
+      "directHttpStatus": "unknown",
+      "directResponseSha256": null,
+      "claimSummary": "Official Terms June18 2026, CCBill public Consumer Support and linked provider support actually opened. Terms15 CCBill-versus-other-method refund route and27 cancellation distinct supported, restrictive refund policy/local law qualifier accurately attributed. CCBill public search/cancel form visible but not filled/submitted; provider support renders loading so no logged-in UI claim made."
+    },
+    {
+      "url": "https://support.ccbill.com/",
+      "checkedAt": "2026-10-31T05:19:05.794Z",
+      "status": "content-retrieved",
+      "retrieval": "Actual official source searched/opened/read this heartbeat; direct HTTP recorded separately.",
+      "directHttpStatus": 200,
+      "directResponseSha256": "111ae476f69271b79fac6e2d4958c55eacc65b69e3d66db65f43c6c8163fef27",
+      "claimSummary": "Official Terms June18 2026, CCBill public Consumer Support and linked provider support actually opened. Terms15 CCBill-versus-other-method refund route and27 cancellation distinct supported, restrictive refund policy/local law qualifier accurately attributed. CCBill public search/cancel form visible but not filled/submitted; provider support renders loading so no logged-in UI claim made."
+    },
+    {
+      "url": "https://www.gptgirlfriend.online/support",
+      "checkedAt": "2026-10-31T05:19:05.794Z",
+      "status": "content-retrieved",
+      "retrieval": "Actual official source searched/opened/read this heartbeat; direct HTTP recorded separately.",
+      "directHttpStatus": "unknown",
+      "directResponseSha256": null,
+      "claimSummary": "Official Terms June18 2026, CCBill public Consumer Support and linked provider support actually opened. Terms15 CCBill-versus-other-method refund route and27 cancellation distinct supported, restrictive refund policy/local law qualifier accurately attributed. CCBill public search/cancel form visible but not filled/submitted; provider support renders loading so no logged-in UI claim made."
+    }
+  ],
+  "editorialReview": {
+    "readable": true,
+    "useful": true,
+    "factual": true,
+    "experienceClaims": "none",
+    "assessment": "Official Terms June18 2026, CCBill public Consumer Support and linked provider support actually opened. Terms15 CCBill-versus-other-method refund route and27 cancellation distinct supported, restrictive refund policy/local law qualifier accurately attributed. CCBill public search/cancel form visible but not filled/submitted; provider support renders loading so no logged-in UI claim made."
+  },
+  "materialChangeFound": false,
+  "requiredContentChanges": [],
+  "recommendedEditorialDecision": "eligible-for-basic-editorial-approval-with-listed-corrections",
+  "limitations": [
+    "Source research only. No login, purchase, deletion, chat, report submission or payment/account changes performed."
+  ],
+  "currentMainBindingVerified": {
+    "passed": true,
+    "main": "ba697213929a41fb5ebf6f35d78e514d5be6e654",
+    "production": {
+      "id": "5ce2afd8-2c3a-47c7-8ef5-947d410894ea",
+      "url": "https://5ce2afd8.girlfriendgpt-fun.pages.dev",
+      "commit": "ba697213929a41fb5ebf6f35d78e514d5be6e654",
+      "sourceShaRaw": "ba697213929a41fb5ebf6f35d78e514d5be6e654",
+      "createdAt": "2026-10-29T13:21:03.202945Z"
+    }
+  },
+  "finalContentSha256": "22a9919cc64e45787d2788b283e40683dd0665d0e0839cf798ebd8dd71b4edec",
+  "originalContentSha256": "6f8a02f9ddecf60054974e1bc806f448749ddda3c2c074688080ce1e1afb93d8",
+  "finalMetadataReview": {
+    "publishDate": "2026-11-03",
+    "originalPublishDate": "2026-10-30",
+    "reason": "Actual effective activation date; original planned releaseAt retained",
+    "updatedDateChangedOnlyForBodyCorrection": false
+  }
+}

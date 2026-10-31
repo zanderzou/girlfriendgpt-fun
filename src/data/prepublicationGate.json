@@ -96,6 +96,71 @@
         }
       ],
       "certificateDigest": "b8033d29077b917ba0c0df788606921e8a98a8accfb71533e754ec1273e1153a"
+    },
+    "girlfriendgpt-ccbill-refund-cancel-different-requests": {
+      "schemaVersion": 1,
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "domain": "girlfriendgpt.fun",
+      "slug": "girlfriendgpt-ccbill-refund-cancel-different-requests",
+      "order": 4,
+      "releaseAt": "2026-10-30T22:15:31.672Z",
+      "activationAt": "2026-11-03T04:37:10.772Z",
+      "reviewedAt": "2026-10-31T05:20:05.285Z",
+      "factsCheckedAt": "2026-10-31T05:19:05.794Z",
+      "reviewedBy": "Codex article and current primary-source review under October27 human standard",
+      "contentSha256": "22a9919cc64e45787d2788b283e40683dd0665d0e0839cf798ebd8dd71b4edec",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Official Terms June18 2026, CCBill public Consumer Support and linked provider support actually opened. Terms15 CCBill-versus-other-method refund route and27 cancellation distinct supported, restrictive refund policy/local law qualifier accurately attributed. CCBill public search/cancel form visible but not filled/submitted; provider support renders loading so no logged-in UI claim made."
+      },
+      "observations": [],
+      "officialSources": [
+        {
+          "url": "https://www.gptgirlfriend.online/legal/terms",
+          "checkedAt": "2026-10-31T05:19:05.794Z",
+          "status": "content-retrieved",
+          "claim": "Official Terms June18 2026, CCBill public Consumer Support and linked provider support actually opened. Terms15 CCBill-versus-other-method refund route and27 cancellation distinct supported, restrictive refund policy/local law qualifier accurately attributed. CCBill public search/cancel form visible but not filled/submitted; provider support renders loading so no logged-in UI claim made.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261031-051246/editorial-review.json",
+              "sha256": "856c64b5102623c7a58ea2cb9d55612b7f1207a94a7d50c90d37069723eca9a1"
+            }
+          ]
+        },
+        {
+          "url": "https://support.ccbill.com/",
+          "checkedAt": "2026-10-31T05:19:05.794Z",
+          "status": "content-retrieved",
+          "claim": "Official Terms June18 2026, CCBill public Consumer Support and linked provider support actually opened. Terms15 CCBill-versus-other-method refund route and27 cancellation distinct supported, restrictive refund policy/local law qualifier accurately attributed. CCBill public search/cancel form visible but not filled/submitted; provider support renders loading so no logged-in UI claim made.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261031-051246/editorial-review.json",
+              "sha256": "856c64b5102623c7a58ea2cb9d55612b7f1207a94a7d50c90d37069723eca9a1"
+            }
+          ]
+        },
+        {
+          "url": "https://www.gptgirlfriend.online/support",
+          "checkedAt": "2026-10-31T05:19:05.794Z",
+          "status": "content-retrieved",
+          "claim": "Official Terms June18 2026, CCBill public Consumer Support and linked provider support actually opened. Terms15 CCBill-versus-other-method refund route and27 cancellation distinct supported, restrictive refund policy/local law qualifier accurately attributed. CCBill public search/cancel form visible but not filled/submitted; provider support renders loading so no logged-in UI claim made.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261031-051246/editorial-review.json",
+              "sha256": "856c64b5102623c7a58ea2cb9d55612b7f1207a94a7d50c90d37069723eca9a1"
+            }
+          ]
+        }
+      ],
+      "certificateDigest": "8e305ed89fa7b8bce2bb1c92cc4421a30428be365f358456f68acdc5f9c44222"
     }
   }
 }
