@@ -1,2 +1,3 @@
 
 src/editorial-drafts/*.md text eol=lf
+private-editorial-evidence/** -text
