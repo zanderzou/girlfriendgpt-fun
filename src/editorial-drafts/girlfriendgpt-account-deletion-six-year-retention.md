@@ -1,8 +1,8 @@
 ---
 title: "GirlfriendGPT Account Deletion: Read the Retention Clause Too"
 description: "Distinguish closing a GirlfriendGPT account from erasing every record, understand the policy’s usual six-year wording, and ask a specific follow-up about retained data."
-publishDate: "2026-11-06"
-updatedDate: "2026-10-19"
+publishDate: "2026-11-12"
+updatedDate: "2026-11-12"
 category: "Practical guide"
 readTime: "3 min read"
 accent: "violet"

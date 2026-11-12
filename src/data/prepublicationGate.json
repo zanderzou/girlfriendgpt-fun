@@ -161,6 +161,59 @@
         }
       ],
       "certificateDigest": "8e305ed89fa7b8bce2bb1c92cc4421a30428be365f358456f68acdc5f9c44222"
+    },
+    "girlfriendgpt-account-deletion-six-year-retention": {
+      "schemaVersion": 1,
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "domain": "girlfriendgpt.fun",
+      "slug": "girlfriendgpt-account-deletion-six-year-retention",
+      "order": 5,
+      "releaseAt": "2026-11-06T23:34:34.672Z",
+      "activationAt": "2026-11-12T16:19:36.000Z",
+      "reviewedAt": "2026-11-12T15:58:53.436Z",
+      "factsCheckedAt": "2026-11-12T15:58:47.9434455Z",
+      "reviewedBy": "Codex editorial review",
+      "contentSha256": "4a3c310916938ed3e7c8098dadab15e6eecf41eea41cd705f3afe8d9c2777c53",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Clear practical English guide. Important claims checked against official documents. Illustrations are hypothetical or documentary, without invented account or product testing."
+      },
+      "observations": [],
+      "officialSources": [
+        {
+          "url": "https://www.gptgirlfriend.online/legal/privacy",
+          "claim": "Section 12 states a usual six-year period for personal information after account closure, with qualifications. Sections 18–19 address erasure and legal exceptions.",
+          "checkedAt": "2026-11-12T15:58:47.9434455Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261112-blog-release-review.json",
+              "sha256": "a188e2b3fdc5097eaf2d822c77e25a14f6155f1cce52e437801a3156cde383ad"
+            }
+          ]
+        },
+        {
+          "url": "https://www.gptgirlfriend.online/legal/terms",
+          "claim": "Section 27 separately addresses cancelling recurring payments and future rebilling, including cancellation confirmation and provider-specific routes. It supports treating billing follow-up separately from a privacy or account-closure request.",
+          "checkedAt": "2026-11-07T04:41:23.861Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261112-blog-release-review.json",
+              "sha256": "a188e2b3fdc5097eaf2d822c77e25a14f6155f1cce52e437801a3156cde383ad"
+            }
+          ]
+        }
+      ],
+      "certificateDigest": "dc15ce3457022ac366b3d717e0710e18874f40fa2f63b238a8e3670ec88e54d8"
     }
   }
 }

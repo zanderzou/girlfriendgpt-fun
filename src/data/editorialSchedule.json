@@ -125,8 +125,8 @@
       "language": "en",
       "approved": true,
       "status": "editorially-reviewed",
-      "sourcesCheckedAt": "2026-10-19",
-      "reviewedSha256": "1b491b43f1c9082bfddd2bf5cf4395110cbc8acb4567b17ad7e9a19651013eb2",
+      "sourcesCheckedAt": "2026-11-12",
+      "reviewedSha256": "4a3c310916938ed3e7c8098dadab15e6eecf41eea41cd705f3afe8d9c2777c53",
       "wordCount": 432,
       "editorialIntent": "A three-state record map and a precise retained-category question rather than an unsupported immediate-erasure claim.",
       "sources": [

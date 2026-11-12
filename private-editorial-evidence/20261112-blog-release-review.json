@@ -1,0 +1,96 @@
+{
+  "domain": "girlfriendgpt.fun",
+  "slug": "girlfriendgpt-account-deletion-six-year-retention",
+  "sourceCommit": "01885e5abcd52968444ac6fb8d0ae81c8e941dae",
+  "originalContentSha256": "1b491b43f1c9082bfddd2bf5cf4395110cbc8acb4567b17ad7e9a19651013eb2",
+  "finalContentSha256": "4a3c310916938ed3e7c8098dadab15e6eecf41eea41cd705f3afe8d9c2777c53",
+  "reviewedAt": "2026-11-12T15:58:53.436Z",
+  "editorialNote": "Clear practical English guide. Important claims checked against official documents. Illustrations are hypothetical or documentary, without invented account or product testing.",
+  "officialSources": [
+    {
+      "url": "https://www.gptgirlfriend.online/legal/privacy",
+      "claim": "Section 12 states a usual six-year period for personal information after account closure, with qualifications. Sections 18–19 address erasure and legal exceptions.",
+      "checkedAt": "2026-11-12T15:58:47.9434455Z"
+    },
+    {
+      "url": "https://www.gptgirlfriend.online/legal/terms",
+      "claim": "Section 27 separately addresses cancelling recurring payments and future rebilling, including cancellation confirmation and provider-specific routes. It supports treating billing follow-up separately from a privacy or account-closure request.",
+      "checkedAt": "2026-11-07T04:41:23.861Z"
+    }
+  ],
+  "earlierArticleReview": {
+    "domain": "girlfriendgpt.fun",
+    "slug": "girlfriendgpt-account-deletion-six-year-retention",
+    "title": "GirlfriendGPT Account Deletion: Read the Retention Clause Too",
+    "sourceCommit": "01885e5abcd52968444ac6fb8d0ae81c8e941dae",
+    "contentFile": "src/editorial-drafts/girlfriendgpt-account-deletion-six-year-retention.md",
+    "contentSha256": "1b491b43f1c9082bfddd2bf5cf4395110cbc8acb4567b17ad7e9a19651013eb2",
+    "sourceRead": "Complete exact committed draft read; hash rechecked before saving this audit.",
+    "readerQuestion": "Does GirlfriendGPT account closure mean immediate erasure, and what does the privacy notice say about retained information?",
+    "originalReleaseAt": "2026-11-06T23:34:34.672Z",
+    "notBefore": "2026-11-10T04:37:10.772Z",
+    "reviewStandard": "portfolio-basic-quality-20261027",
+    "editorialReview": {
+      "readable": true,
+      "useful": true,
+      "keyClaimsSupported": true,
+      "experienceClaims": "No performed product testing claimed; fictional cases marked illustrative.",
+      "note": "The draft accurately attributes the usual retention period, qualifies its scope, and turns the policy distinction into specific category/purpose/duration questions without asserting backend results."
+    },
+    "sources": [
+      {
+        "url": "https://www.gptgirlfriend.online/legal/privacy",
+        "title": "Privacy Notice",
+        "sourceUpdated": "April 13, 2026",
+        "facts": [
+          "Section 12 describes usual retention of personal information for six years beginning at account closure and permits changes for business or regulatory requirements.",
+          "Sections 18 and 19 discuss consent withdrawal and erasure requests, including possible legal reasons preventing erasure.",
+          "The wording does not establish that every chat remains for exactly six years, that data is available as a recoverable user archive, or that account closure instantly erases every record."
+        ],
+        "checkedAt": "2026-11-07T04:41:23.861Z",
+        "status": "official-content-opened",
+        "method": "Current web search plus opened original official page; relevant passages read."
+      },
+      {
+        "url": "https://www.gptgirlfriend.online/legal/terms",
+        "title": "Terms of Use",
+        "sourceUpdated": "June 18, 2026",
+        "facts": [
+          "Section 27 separately addresses cancelling recurring payments and future rebilling, including cancellation confirmation and provider-specific routes.",
+          "It supports treating billing follow-up separately from a privacy or account-closure request."
+        ],
+        "checkedAt": "2026-11-07T04:41:23.861Z",
+        "status": "official-content-opened",
+        "method": "Current web search plus opened original official page; relevant passages read."
+      },
+      {
+        "url": "https://www.gptgirlfriend.online/support",
+        "title": "Official support route linked by the privacy notice and terms",
+        "status": "loading-shell-only",
+        "facts": [
+          "The URL was opened but yielded only a loading message; its support form or logged-in workflow was not verified."
+        ],
+        "checkedAt": "2026-11-07T04:41:23.861Z",
+        "method": "Current web search plus opened original official page; relevant passages read."
+      }
+    ],
+    "proposedCorrections": [],
+    "recommendation": "No material English correction needed. Suitable to carry forward for the separately authorized basic approval and production checks; this research record grants no release permission.",
+    "gaps": [
+      "Support-page UI currently unverified; linked official route is corroborated by the legal pages. Do not add UI steps or promise a response outcome.",
+      "No closure or erasure request performed; legal text is attributed as policy rather than an audit of actual retention."
+    ],
+    "approvalIssued": false,
+    "repoEdited": false,
+    "built": false,
+    "deployed": false,
+    "productionIdentityVerified": false
+  },
+  "correctedBeforeRelease": false,
+  "priorProduction": {
+    "deploymentId": "a156fae0-54c0-4fb1-9542-617faab08705",
+    "sourceCommit": "01885e5abcd52968444ac6fb8d0ae81c8e941dae",
+    "phase": 4
+  },
+  "intendedActivationAt": "2026-11-12T16:19:36.000Z"
+}
