@@ -1,0 +1,38 @@
+{
+  "domain": "girlfriendgpt.fun",
+  "slug": "girlfriendgpt-excerpt-rights-self-created-character",
+  "order": 8,
+  "reviewedAt": "2026-11-16T10:20:59.970Z",
+  "factsCheckedAt": "2026-11-16T10:20:32.000Z",
+  "contentSha256": "bd995158f0451563070f2a6bb89df7007e3e4472c86d4525152fb718dcc7d0ae",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "releaseAt": "2026-12-03T16:19:36.000Z",
+  "readerQuestion": "What should I check before sharing text from a conversation with a GirlfriendGPT character?",
+  "applicableClaims": [
+    {
+      "name": "GirlfriendGPT Terms of Use",
+      "url": "https://www.gptgirlfriend.online/legal/terms",
+      "note": "The terms distinguish paid entitlement and payment processors. They cover rights and restrictions for platform material, user contributions and certain text from chats with characters the user devised."
+    },
+    {
+      "name": "GirlfriendGPT Privacy Notice",
+      "url": "https://www.gptgirlfriend.online/legal/privacy",
+      "note": "The notice describes content, account, marketing preferences and the right to access a copy of personal data. It distinguishes visitors from subscribed users."
+    }
+  ],
+  "exampleType": "Original illustrative workflow",
+  "proofOfExistingPublicPrefix": "research/prepublish-tested-seo-20261023/runs/2026-11-16-weekly-refill/sites/girlfriendgpt.fun/baseline.json",
+  "illustration": {
+    "path": "public/assets/editorial-girlfriendgpt-excerpt-rights-self-created-character.png",
+    "sha256": "9b759eeb435f910aa20c8d4da13a6ea87a10fa2674716172aa9a6bfd8e8bd3e1",
+    "type": "Original editorial diagram",
+    "alt": "Identify the character creator, Mark the exact text, Check the sharing purpose."
+  },
+  "editorialReview": {
+    "readerAction": "Check who authored the character, which text you want to share and what rights or private details it contains.",
+    "wordCount": 271,
+    "factBasis": "Primary sources and an explicitly fictional example. No product operation is claimed.",
+    "sourceLinksKeptInPrivateEvidence": true,
+    "productionReview": "The compiled Worker, all release boundaries and formal site are checked separately."
+  }
+}

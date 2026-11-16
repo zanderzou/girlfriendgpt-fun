@@ -47,7 +47,7 @@ let succeeded=false;
 try{await snapshot(baselinePhase);for(const a of approved.filter(a=>a.order>baselinePhase))await snapshot(a.order);succeeded=true}
 finally{try{for(const a of schedule.articles){const f=path.join(content,a.slug+'.md');if(original.has(a.slug))await writeFile(f,original.get(a.slug));else if(await exists(f))await unlink(f)}if(succeeded)await rawBuild(baselinePhase)}finally{for(const [f,bytes]of nativeSources)await writeFile(f,bytes)}}
 const worker=makeEditorialWorker({schedule:schedule.articles,versions,originalWorker:baseWorker,securityHeaders,articlePrefix:schedule.articlePrefix??'/blog/',gate});
-assert.ok(Buffer.byteLength(worker)<2_500_000,'Worker exceeds conservative size limit');
+assert.ok(Buffer.byteLength(worker)<=64*1024*1024,'Publication Worker exceeds the Cloudflare 64 MiB uncompressed bundle limit');
 await writeFile(path.join(out,'_worker.js'),worker);
 const includes=[...new Set([...baseRoutes.include,schedule.articlePrefix?.slice(0,-1)??'/blog',(schedule.articlePrefix??'/blog/')+'*',...Object.values(versions).flatMap(v=>Object.keys(v))])];
 const compact=includes.includes('/*')?['/*']:includes.filter(p=>!p.startsWith(schedule.articlePrefix??'/blog/')||p===(schedule.articlePrefix??'/blog/')+'*');

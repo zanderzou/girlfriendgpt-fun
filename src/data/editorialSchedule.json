@@ -145,6 +145,81 @@
       ],
       "notBefore": "2026-11-10T04:37:10.772Z",
       "scheduleNote": "Effective earliest opportunity after delayed previous release; retain original releaseAt and require basic editorial approval."
+    },
+    {
+      "order": 6,
+      "slug": "girlfriendgpt-marketing-email-preference-check",
+      "title": "GirlfriendGPT Marketing Emails: Check the Sender and Message Type",
+      "readerQuestion": "How do I stop GirlfriendGPT marketing messages while keeping useful account notices?",
+      "releaseAt": "2026-11-19T16:19:36.000Z",
+      "notBefore": "2026-11-19T16:19:36.000Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-11-16",
+      "reviewedSha256": "09cd91c9f82993bd1ccf6ac7743c4b51d5f851b7169e3fe76e8e0d31ee0312be",
+      "wordCount": 265,
+      "editorialIntent": "Identify the promotional message, update the relevant preference and keep receipts and security notices available.",
+      "sources": [
+        [
+          "GirlfriendGPT Privacy Notice",
+          "https://www.gptgirlfriend.online/legal/privacy"
+        ],
+        [
+          "GirlfriendGPT Support",
+          "https://www.gptgirlfriend.online/support"
+        ]
+      ]
+    },
+    {
+      "order": 7,
+      "slug": "girlfriendgpt-compare-reply-on-one-prompt",
+      "title": "GirlfriendGPT Dialogue: Compare Two Openings With One Fixed Question",
+      "readerQuestion": "How do I evaluate two character openings without confusing changes in tone, premise and question?",
+      "releaseAt": "2026-11-26T16:19:36.000Z",
+      "notBefore": "2026-11-26T16:19:36.000Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-11-16",
+      "reviewedSha256": "588cf78d7c3b8b973087cc70862cc3578db71f4cd7c55f4fc7fce01f929b8bd5",
+      "wordCount": 270,
+      "editorialIntent": "Use one original question and a small rubric to judge whether two fictional conversation openings serve the same goal.",
+      "sources": [
+        [
+          "GirlfriendGPT Terms of Use",
+          "https://www.gptgirlfriend.online/legal/terms"
+        ],
+        [
+          "GirlfriendGPT Privacy Notice",
+          "https://www.gptgirlfriend.online/legal/privacy"
+        ]
+      ]
+    },
+    {
+      "order": 8,
+      "slug": "girlfriendgpt-excerpt-rights-self-created-character",
+      "title": "Sharing GirlfriendGPT Text? Identify Who Created the Character",
+      "readerQuestion": "What should I check before sharing text from a conversation with a GirlfriendGPT character?",
+      "releaseAt": "2026-12-03T16:19:36.000Z",
+      "notBefore": "2026-12-03T16:19:36.000Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-11-16",
+      "reviewedSha256": "bd995158f0451563070f2a6bb89df7007e3e4472c86d4525152fb718dcc7d0ae",
+      "wordCount": 271,
+      "editorialIntent": "Check who authored the character, which text you want to share and what rights or private details it contains.",
+      "sources": [
+        [
+          "GirlfriendGPT Terms of Use",
+          "https://www.gptgirlfriend.online/legal/terms"
+        ],
+        [
+          "GirlfriendGPT Privacy Notice",
+          "https://www.gptgirlfriend.online/legal/privacy"
+        ]
+      ]
     }
   ],
   "baselinePhase": 1,

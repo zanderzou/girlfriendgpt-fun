@@ -214,6 +214,168 @@
         }
       ],
       "certificateDigest": "dc15ce3457022ac366b3d717e0710e18874f40fa2f63b238a8e3670ec88e54d8"
+    },
+    "girlfriendgpt-marketing-email-preference-check": {
+      "schemaVersion": 1,
+      "domain": "girlfriendgpt.fun",
+      "slug": "girlfriendgpt-marketing-email-preference-check",
+      "order": 6,
+      "releaseAt": "2026-11-19T16:19:36.000Z",
+      "activationAt": "2026-11-19T16:19:36.000Z",
+      "contentSha256": "09cd91c9f82993bd1ccf6ac7743c4b51d5f851b7169e3fe76e8e0d31ee0312be",
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "reviewedAt": "2026-11-16T10:20:59.970Z",
+      "factsCheckedAt": "2026-11-16T10:20:32.000Z",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Primary sources and an explicitly fictional example. No product operation is claimed."
+      },
+      "officialSources": [
+        {
+          "name": "GirlfriendGPT Privacy Notice",
+          "url": "https://www.gptgirlfriend.online/legal/privacy",
+          "note": "The notice describes content, account, marketing preferences and the right to access a copy of personal data. It distinguishes visitors from subscribed users.",
+          "checkedAt": "2026-11-16T10:20:32.000Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/girlfriendgpt-marketing-email-preference-check.json",
+              "sha256": "30ac6aa6599cd55b104fa5e070b4a47e1e45f9ec4afeb18c514236aac08060fc"
+            }
+          ]
+        },
+        {
+          "name": "GirlfriendGPT Support",
+          "url": "https://www.gptgirlfriend.online/support",
+          "note": "Operator-published support destination linked from the website policies. No testing of support response, account settings or an export flow was performed.",
+          "checkedAt": "2026-11-16T10:20:32.000Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/girlfriendgpt-marketing-email-preference-check.json",
+              "sha256": "30ac6aa6599cd55b104fa5e070b4a47e1e45f9ec4afeb18c514236aac08060fc"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "certificateDigest": "f92c1d4f064ac4005f7eec0fcd799d2108694cf09adcdc70d3d45d2950ab14c6"
+    },
+    "girlfriendgpt-compare-reply-on-one-prompt": {
+      "schemaVersion": 1,
+      "domain": "girlfriendgpt.fun",
+      "slug": "girlfriendgpt-compare-reply-on-one-prompt",
+      "order": 7,
+      "releaseAt": "2026-11-26T16:19:36.000Z",
+      "activationAt": "2026-11-26T16:19:36.000Z",
+      "contentSha256": "588cf78d7c3b8b973087cc70862cc3578db71f4cd7c55f4fc7fce01f929b8bd5",
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "reviewedAt": "2026-11-16T10:20:59.970Z",
+      "factsCheckedAt": "2026-11-16T10:20:32.000Z",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Primary sources and an explicitly fictional example. No product operation is claimed."
+      },
+      "officialSources": [
+        {
+          "name": "GirlfriendGPT Terms of Use",
+          "url": "https://www.gptgirlfriend.online/legal/terms",
+          "note": "The terms distinguish paid entitlement and payment processors. They cover rights and restrictions for platform material, user contributions and certain text from chats with characters the user devised.",
+          "checkedAt": "2026-11-16T10:20:32.000Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/girlfriendgpt-compare-reply-on-one-prompt.json",
+              "sha256": "f9d7ef0f96ba4c7f0c45cc2950860f22153398107d1b9ccd4bf44923ce5860a4"
+            }
+          ]
+        },
+        {
+          "name": "GirlfriendGPT Privacy Notice",
+          "url": "https://www.gptgirlfriend.online/legal/privacy",
+          "note": "The notice describes content, account, marketing preferences and the right to access a copy of personal data. It distinguishes visitors from subscribed users.",
+          "checkedAt": "2026-11-16T10:20:32.000Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/girlfriendgpt-compare-reply-on-one-prompt.json",
+              "sha256": "f9d7ef0f96ba4c7f0c45cc2950860f22153398107d1b9ccd4bf44923ce5860a4"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "certificateDigest": "142d8e77c556607c2c23dffd96a72e07a2962f2ad0f0dbb6311118a21b9159c5"
+    },
+    "girlfriendgpt-excerpt-rights-self-created-character": {
+      "schemaVersion": 1,
+      "domain": "girlfriendgpt.fun",
+      "slug": "girlfriendgpt-excerpt-rights-self-created-character",
+      "order": 8,
+      "releaseAt": "2026-12-03T16:19:36.000Z",
+      "activationAt": "2026-12-03T16:19:36.000Z",
+      "contentSha256": "bd995158f0451563070f2a6bb89df7007e3e4472c86d4525152fb718dcc7d0ae",
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "reviewedAt": "2026-11-16T10:20:59.970Z",
+      "factsCheckedAt": "2026-11-16T10:20:32.000Z",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Primary sources and an explicitly fictional example. No product operation is claimed."
+      },
+      "officialSources": [
+        {
+          "name": "GirlfriendGPT Terms of Use",
+          "url": "https://www.gptgirlfriend.online/legal/terms",
+          "note": "The terms distinguish paid entitlement and payment processors. They cover rights and restrictions for platform material, user contributions and certain text from chats with characters the user devised.",
+          "checkedAt": "2026-11-16T10:20:32.000Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/girlfriendgpt-excerpt-rights-self-created-character.json",
+              "sha256": "798540cbade1b949ec93d2438fed62198a1a668595d745c9a255195871401bfb"
+            }
+          ]
+        },
+        {
+          "name": "GirlfriendGPT Privacy Notice",
+          "url": "https://www.gptgirlfriend.online/legal/privacy",
+          "note": "The notice describes content, account, marketing preferences and the right to access a copy of personal data. It distinguishes visitors from subscribed users.",
+          "checkedAt": "2026-11-16T10:20:32.000Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/girlfriendgpt-excerpt-rights-self-created-character.json",
+              "sha256": "798540cbade1b949ec93d2438fed62198a1a668595d745c9a255195871401bfb"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "certificateDigest": "d4624a3aff8891311217619f46149a40d699deb19fe85c7a87f0779f5c94d245"
     }
   }
 }

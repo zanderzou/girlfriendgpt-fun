@@ -1,0 +1,38 @@
+{
+  "domain": "girlfriendgpt.fun",
+  "slug": "girlfriendgpt-marketing-email-preference-check",
+  "order": 6,
+  "reviewedAt": "2026-11-16T10:20:59.970Z",
+  "factsCheckedAt": "2026-11-16T10:20:32.000Z",
+  "contentSha256": "09cd91c9f82993bd1ccf6ac7743c4b51d5f851b7169e3fe76e8e0d31ee0312be",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "releaseAt": "2026-11-19T16:19:36.000Z",
+  "readerQuestion": "How do I stop GirlfriendGPT marketing messages while keeping useful account notices?",
+  "applicableClaims": [
+    {
+      "name": "GirlfriendGPT Privacy Notice",
+      "url": "https://www.gptgirlfriend.online/legal/privacy",
+      "note": "The notice describes content, account, marketing preferences and the right to access a copy of personal data. It distinguishes visitors from subscribed users."
+    },
+    {
+      "name": "GirlfriendGPT Support",
+      "url": "https://www.gptgirlfriend.online/support",
+      "note": "Operator-published support destination linked from the website policies. No testing of support response, account settings or an export flow was performed."
+    }
+  ],
+  "exampleType": "Original illustrative workflow",
+  "proofOfExistingPublicPrefix": "research/prepublish-tested-seo-20261023/runs/2026-11-16-weekly-refill/sites/girlfriendgpt.fun/baseline.json",
+  "illustration": {
+    "path": "public/assets/editorial-girlfriendgpt-marketing-email-preference-check.png",
+    "sha256": "d6e4c7086054122dfc97f69c5267ef00c80aa90d40a6a357bb3f6a817106c206",
+    "type": "Original editorial diagram",
+    "alt": "Identify the actual sender, Find marketing preferences, Keep the record."
+  },
+  "editorialReview": {
+    "readerAction": "Identify the promotional message, update the relevant preference and keep receipts and security notices available.",
+    "wordCount": 265,
+    "factBasis": "Primary sources and an explicitly fictional example. No product operation is claimed.",
+    "sourceLinksKeptInPrivateEvidence": true,
+    "productionReview": "The compiled Worker, all release boundaries and formal site are checked separately."
+  }
+}
